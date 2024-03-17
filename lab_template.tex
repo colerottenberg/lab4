@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{indentfirst}
+\usepackage{xcolor}
+\usepackage{fmtcount}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{EEL 4712C - Digital Design: Lab Report}
+\author{Cole Rottenberg \\ 11062528}
+\date{Due Date}
+
+\lstset{
+  language=VHDL,
+  numbers=left,
+  stepnumber=1,
+  tabsize=2,
+  numbersep=5pt,
+  backgroundcolor=\color{white},
+  showspaces=false,
+  showtabs=true,
+  frame=single,
+  rulecolor=\color{black},
+  captionpos=b,
+  breaklines=true,
+  breakatwhitespace=true,
+  title=\lstname,
+}
+
+\begin{document}
+
+\maketitle
+
+% Test VHDL code
+\begin{lstlisting}[caption=Test VHDL Code, label=lst:test-vhdl-code]
+-- This is a test VHDL code block
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+
+entity test is
+    Port ( a : in  STD_LOGIC;
+           b : in  STD_LOGIC;
+           c : out  STD_LOGIC);
+end test;
+\end{lstlisting}
+
+\section*{Prelab Report}
+
+\subsection*{Prelab Questions}
+% Put all the answers to the prelab questions. These may be scanned using your phone or scanner. Not all prelabs have prelab questions
+
+\subsection*{Prelab Design and Implementation}
+% Go into detail about how you designed any design parts of the prelab. Then, go into detail about how you implemented any implementation parts of the prelab
+
+\subsection*{Reflection}
+% Talk about what you learned during the prelab. Bring up anything that was a stumped you for a while. Bring up any accomplishments you were proud of.
+
+\subsection*{Prelab Homework}
+% Show all work for the Prelab Homework here
+% Show all the work for every step in the Prelab Homework section. Label each part clearly and caption all figures. All simulations must be annotated. Annotation means pointing out particularly important parts of a simulation. This can be done with arrows or textboxes. Simple simulations will not have a lot to talk about, but later simulations will be a lot more complex. Any code written in the prelab should be commented a fair amount.
+
+\section*{Postlab Report}
+
+\subsection*{Problem Statement}
+% Provide a short informal description of the lab’s goals (From the lab assignment)
+% If required, specify the system to design.
+% - Define the inputs.
+% - Define the outputs.
+% - Define the function of your system. 
+% This section should be 1-2 paragraphs long.
+
+\subsection*{Design}
+% Describe the design decisions you made.
+% - What components did you use?
+% - What signals did you use to connect the components?
+% - What algorithms did you use?
+% Code Segment or block diagrams may be included here.
+% Explain your design choices(pros/cons).
+% Any designs made in prelab should be included here but more briefly.
+% This section should be 1-2 paragraphs long.
+
+\subsection*{Implementation}
+% Describe the implementation process.
+% Code segments or block diagrams may be included here.
+% What time did you need to complete your design?
+% This section should be 1-2 paragraphs long.
+
+\subsection*{Testing}
+% Describe how you tested your design.
+% Did everything work as expected?
+% - Did inputs match the expected outputs?
+% - Special cases?
+% Include if possible, timing diagram of photo/video of the system.
+
+\subsection*{Conclusions}
+% Summarize in one paragraph, the work you did, the success and problems you encountered, and how to improve next in the future.
+% This section should only be 1 paragraph long.
+
+\section*{Appendix}
+% Include all postlab code, screenshots, and simulations here. ALL SIMULATIONS MUST BE ANNOTATED. This means pointing out particularly important parts of a simulation. This can be done with arrows or textboxes. All figures must be captioned. Code should be commented a fair amount.
+
+\end{document}
