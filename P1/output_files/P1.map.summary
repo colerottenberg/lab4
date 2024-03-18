@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sun Mar 17 23:32:41 2024
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Revision Name : P1
+Top-level Entity Name : top_level
+Family : MAX 10
+Total logic elements : 149
+    Total combinational functions : 141
+    Dedicated logic registers : 97
+Total registers : 97
+Total pins : 85
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
