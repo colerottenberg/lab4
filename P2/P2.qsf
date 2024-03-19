@@ -440,3 +440,4 @@ set_global_assignment -name VHDL_FILE counter.vhd
 set_global_assignment -name VHDL_FILE clk_div.vhd
 set_global_assignment -name VERILOG_FILE DE10_LITE_Golden_Top.v
 set_global_assignment -name VHDL_FILE vga.vhd
+set_global_assignment -name VHDL_FILE vga_controller.vhd
