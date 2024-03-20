@@ -58,7 +58,8 @@ entity vga is
     port (
         clk : in std_logic;
         rst : in std_logic;
-        switch : in std_logic_vector(9 downto 0);
+        en  : in std_logic;
+        switch : in std_logic_vector(9 downto 0) := (others => '0');
         img_pos : out std_logic_vector(2 downto 0);
         red,green,blue : out std_logic_vector(3 downto 0);
         h_sync, v_sync : out std_logic;
@@ -70,8 +71,8 @@ end entity vga;
 -- Define behavior of VGA
 architecture arch of vga is
 
-    signal v_count : unsigned(); -- Need to input range of vertical period including dead space
-    signal h_count : unsigned(); -- Need to input range of vertical period including dead space
+    signal v_count : unsigned(COUNT_RANGE); -- Need to input range of vertical period including dead space
+    signal h_count : unsigned(COUNT_RANGE); -- Need to input range of vertical period including dead space
 
     signal v_en : std_logic;
     signal h_en : std_logic;
@@ -120,6 +121,8 @@ begin
         blue <= "0000";
     end if;
 
+end process;
+
 process(clk, rst)
 begin
     if(rst = '1') then
@@ -161,4 +164,6 @@ begin
     else
         video_on <= '0';
     end if;
+
+end process;
 end arch ; -- arch

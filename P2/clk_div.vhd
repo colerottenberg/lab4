@@ -8,7 +8,8 @@ use ieee.numeric_std.all;
 
 entity clk_div is
     generic(
-        input_frequency : integer := 10;
+        input_frequency : integer := 10
+    );
     port(
         clk : in std_logic;
         reset : in std_logic;

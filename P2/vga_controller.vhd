@@ -15,8 +15,8 @@ entity vga_controller is
         v_bp : INTEGER := 38; --vertical back porch width in rows
         v_pixels : INTEGER := 1200; --vertical display width in rows
         v_fp : INTEGER := 1; --vertical front porch width in rows
-        v_pol : STD_LOGIC := '1'); --vertical sync pulse polarity (1 = positive, 0 = negative)
-    )
+        v_pol : STD_LOGIC := '1' --vertical sync pulse polarity (1 = positive, 0 = negative)
+    );
     port(
         pixel_clk : IN STD_LOGIC; --pixel clock at frequency of VGA mode being used
         reset_n : IN STD_LOGIC; --active low asycnchronous reset
@@ -26,8 +26,8 @@ entity vga_controller is
         column : OUT INTEGER; --horizontal pixel coordinate
         row : OUT INTEGER; --vertical pixel coordinate
         n_blank : OUT STD_LOGIC; --direct blacking output to DAC
-        n_sync : OUT STD_LOGIC); --sync-on-green output to DAC
-    )
+        n_sync : OUT STD_LOGIC  --sync-on-green output to DAC
+    );
 end vga_controller;
 
 architecture behavior of vga_controller is
