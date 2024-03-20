@@ -1,5 +1,5 @@
 Analysis & Elaboration report for P2
-Tue Mar 19 22:14:19 2024
+Tue Mar 19 22:16:15 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                      ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status      ; Failed - Tue Mar 19 22:14:19 2024              ;
+; Analysis & Elaboration Status      ; Failed - Tue Mar 19 22:16:15 2024              ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; P2                                             ;
 ; Top-level Entity Name              ; top_level                                      ;
@@ -164,7 +164,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Tue Mar 19 22:14:12 2024
+    Info: Processing started: Tue Mar 19 22:16:08 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P2 -c P2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -198,7 +198,7 @@ Error (10346): VHDL error at top_level.vhd(66): formal port or parameter "reset"
 Error (10784): HDL error at clk_div.vhd(15): see declaration for object "reset" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/clk_div.vhd Line: 15
 Error: Quartus Prime Analysis & Elaboration was unsuccessful. 6 errors, 1 warning
     Error: Peak virtual memory: 4797 megabytes
-    Error: Processing ended: Tue Mar 19 22:14:19 2024
+    Error: Processing ended: Tue Mar 19 22:16:15 2024
     Error: Elapsed time: 00:00:07
     Error: Total CPU time (on all processors): 00:00:11
 

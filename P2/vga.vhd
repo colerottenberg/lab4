@@ -55,115 +55,132 @@ use work.vga_lib.all;
 -- a fairly strict test for timing to make sure the outputs closely align with Figures 1, 2, & 3.
 
 entity vga is
-    port (
-        clk : in std_logic;
-        rst : in std_logic;
-        en  : in std_logic;
-        switch : in std_logic_vector(9 downto 0) := (others => '0');
-        img_pos : out std_logic_vector(2 downto 0);
-        red,green,blue : out std_logic_vector(3 downto 0);
-        h_sync, v_sync : out std_logic;
-        video_on : out std_logic
-    );
-end entity vga;
+    port (clk              : in  std_logic;
+          rst              : in  std_logic;
+		  switch           : in  std_logic_vector(9 downto 0);
+          img_pos          : in  std_logic_vector(2 downto 0);
+          red, green, blue : out std_logic_vector(3 downto 0);
+          h_sync, v_sync   : out std_logic;
+          video_on         : out std_logic);
+end vga;
+
+architecture default_arch of vga is
+
+  signal v_count : unsigned(COUNT_RANGE);
+  signal h_count : unsigned(COUNT_RANGE);
+  
+  
+  signal v_en : std_logic;
+  signal h_en : std_logic;
+  
+  signal Concat : unsigned (11 downto 0);
+  
+  
+  -- VGA_SYNC_GEN Signals
+  signal v_count_r : natural;
+  signal h_count_r : natural;
 
 
--- Define behavior of VGA
-architecture arch of vga is
+begin 		
+	-- VGA MAIN BEGINS
+	
+	
+	-- This process handles checking whether the current pixel should be lit or not	
+	-- For any lab requiring placing boxes or designs on the screen, this process is where that code would go!
+	process(v_count, h_count)
+	begin
+			v_en <= '0';
+			h_en <= '0';
+	
+			-- Check the Left-most Y          and the Right-most Y
+			if(v_count > to_unsigned(0, 10 )) and (v_count <= to_unsigned(479, 10 )) then
+				-- If within bounds, display 
+				v_en <= '1';
+			else
+				v_en <= '0';
+			end if;
+			-- Check the Left-most X          and the Right-most X
+			if(h_count > to_unsigned(0, 10 )) and (h_count <= to_unsigned(639, 10 ))  then
+				
+				H_en <= '1';
+			else
+				H_en <= '0';
+				
+			end if;
+	end process;
+	
+	
+	process(H_en, V_en)
+	begin
+	
+		if(H_en AND V_en) = '1' then	
+			red(3 downto 1)   <= switch(2 downto 0);
+			green(3 downto 1)  <= switch(5 downto 3);
+			blue(3 downto 1) <= switch(8 downto 6);
+						
+		else 
+			red   <= "0000" ;
+			blue  <= "0000" ;
+			green <= "0000" ;
+					
+		end if;
+	end process; 
+	-- VGA MAIN ENDS
+	
+	
+   -- VGA_SYNC_GEN BEGINS
+	process(clk, rst)
+	begin
+		if(rst = '1') then
+		
+		v_count_r <= 0;
+		h_count_r <= 0;
+		
+		elsif (rising_edge(clk)) then 
+			
+			h_count_r <= h_count_r + 1;  --(increment by 1)
+			
+			if(h_count_r >= H_MAX+1) then--799 value found in vga_lib file under "H_MAX"
+				
+				h_count_r <= 0;
+			end if;	
+			
+			if(h_count_r = H_VERT_INC) then--699 value found in vga_lib file under "H_VERT_INC"
+				
+				v_count_r <= v_count_r + 1; -- (increment by 1)
+			end if;
+				
+			if(v_count_r >= V_MAX+1) then--524 value found in vga_lib file under "V_MAX"
+				
+				v_count_r <= 0;	
+			end if;		
+		end if;
+	end process;
+	
+	h_count <= to_unsigned(h_count_r, 10);
+	v_count <= to_unsigned(v_count_r, 10);
+	
+	process(h_count_r, v_count_r)
+	begin
+		if (h_count_r > HSYNC_BEGIN and h_count_r < HSYNC_END) then 
+			h_sync <= '0';
+		else
+			h_sync <= '1';
+		end if; 
+		
+		if (v_count_r > VSYNC_BEGIN-2 and v_count_r < VSYNC_END) then 
+			v_sync <= '0';
+		else
+			v_sync <= '1';
+		end if;
+		
+		if (h_count_r <= (H_DISPLAY_END ) and v_count_r <= (V_DISPLAY_END )) then 
+			video_on <= '1';
+		else
+			video_on <= '0';
+		end if;
+		
+	end process;
 
-    signal v_count : unsigned(COUNT_RANGE); -- Need to input range of vertical period including dead space
-    signal h_count : unsigned(COUNT_RANGE); -- Need to input range of vertical period including dead space
-
-    signal v_en : std_logic;
-    signal h_en : std_logic;
-
-    -- VGA_SYNC_GEN Signals
-    signal v_count_r : natural;
-    signal h_count_r : natural;
-
-
-begin
-
-    -- VGA MAIN BEGINS
-process(v_count, h_count)
-begin
-
-    v_en <= '0';
-    h_en <= '0';
-    row_address <= (OTHERS => '0');
-    -- Check the Left-most Y and the Right-most Y
-    if(v_count > to_unsigned(0, 10 )) and (v_count <= to_unsigned(479, 10 )) then
-    -- If within bounds, display
-        v_en <= '1';
-    else
-        v_en <= '0';
-    end if;
-
-    -- Check the Left-most X and the Right-most X
-    if(h_count > to_unsigned(0, 10 )) and (h_count <= to_unsigned(639, 10 )) then
-    -- If within bounds, display
-        h_en <= '1';
-    else
-        h_en <= '0';
-    end if;
-end process;
-
--- Color Logic
-process(v_en, h_en)
-begin
-    if(v_en = '1' and h_en = '1') then
-        red(3 downto 1) <= switch(2 downto 0);
-        green(3 downto 1) <= switch(5 downto 3);
-        blue(3 downto 1) <= switch(8 downto 6);
-    else
-        red <= "0000";
-        green <= "0000";
-        blue <= "0000";
-    end if;
-
-end process;
-
-process(clk, rst)
-begin
-    if(rst = '1') then
-        v_count_r <= (others => '0');
-        h_count_r <= (others => '0');
-    elsif rising_edge(clk) then
-        h_count_r <= h_count_r + 1; -- Inc by 1
-        if(h_count_r >= H_MAX) then -- Reset if max
-            h_count_r <= (others => '0');
-        end if;
-
-        if(h_count_r= H_VERT_INC) then
-            v_count_r <= v_count_r + 1; -- Inc by 1
-        end if;
-
-        if(v_count_r >= V_MAX) then -- Reset if max
-            v_count_r <= (others => '0');
-        end if;
-
-    end if;
-end process;
-
-process(h_count_r, v_count_r)
-begin
-    if(h_count_r > HSYNC_BEGIN and h_count_r < HSYNC_END) then
-        h_sync <= '0';
-    else
-        h_sync <= '1';
-    end if;
-
-    if(v_count_r > VSYNC_BEGIN and v_count_r < VSYNC_END) then
-        v_sync <= '0';
-    else
-        v_sync <= '1';
-    end if;
-
-    if(h_count_r <= (H_DISPLAY_END) and v_count_r <= (V_DISPLAY_END)) then
-        video_on <= '1';
-    else
-        video_on <= '0';
-    end if;
-
-end process;
-end arch ; -- arch
+   -- VGA_SYNC_GEN ENDS	
+end default_arch;
