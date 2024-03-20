@@ -64,4 +64,36 @@ architecture behavior of vga_controller is
                 v_count := 0;
             END IF;
         END IF;
-        
+
+        -- horizontal sync signal
+        IF(h_count < h_pixels + h_fp OR h_count >= h_pixels + h_fp + h_pulse) THEN
+            h_sync <= NOT h_pol; --deassert horizontal sync
+        ELSE
+            h_sync <= h_pol; --assert horizontal sync
+        END IF;
+
+        IF(v_count < v_pixels + v_fp OR v_count >= v_pixels + v_fp + v_pulse) THEN
+            v_sync <= NOT v_pol; --deassert vertical sync
+        ELSE
+            v_sync <= v_pol; --assert vertical sync
+        END IF;
+
+        -- Set coordinates for pixel
+        IF(h_count < h_pixels) THEN --horiztonal display time
+            column <= h_count; --set horiztonal pixel coordinate
+        END IF;
+
+        IF(v_count < v_pixels) THEN --vertical display time
+            row <= v_count; --set vertical pixel coordinate
+        END IF;
+
+        --set display enable output
+        IF(h_count < h_pixels AND v_count < v_pixels) THEN --display time
+            disp_ena <= '1'; --enable display
+        ELSE --blanking time
+            disp_ena <= '0'; --disable display
+        END IF;
+
+        END IF;
+    END PROCESS;
+END behavior;
