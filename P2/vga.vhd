@@ -69,9 +69,10 @@ architecture default_arch of vga is
   signal v_count : unsigned(COUNT_RANGE);
   signal h_count : unsigned(COUNT_RANGE);
   
+	signal pixel_on : std_logic;
   
-  signal v_en : std_logic;
-  signal h_en : std_logic;
+	signal temp_h_sync, temp_v_sync : std_logic := '0';
+	signal temp_video_on : std_logic := '0';
   
   signal Concat : unsigned (11 downto 0);
   
@@ -83,104 +84,43 @@ architecture default_arch of vga is
 
 begin 		
 	-- VGA MAIN BEGINS
-	
-	
-	-- This process handles checking whether the current pixel should be lit or not	
-	-- For any lab requiring placing boxes or designs on the screen, this process is where that code would go!
-	process(v_count, h_count)
-	begin
-			v_en <= '0';
-			h_en <= '0';
-	
-			-- Check the Left-most Y          and the Right-most Y
-			if(v_count > to_unsigned(0, 10 )) and (v_count <= to_unsigned(479, 10 )) then
-				-- If within bounds, display 
-				v_en <= '1';
-			else
-				v_en <= '0';
-			end if;
-			-- Check the Left-most X          and the Right-most X
-			if(h_count > to_unsigned(0, 10 )) and (h_count <= to_unsigned(639, 10 ))  then
-				
-				H_en <= '1';
-			else
-				H_en <= '0';
-				
-			end if;
-	end process;
-	
-	
-	process(H_en, V_en)
-	begin
-	
-		if(H_en AND V_en) = '1' then	
-			red(3 downto 1)   <= switch(2 downto 0);
-			green(3 downto 1)  <= switch(5 downto 3);
-			blue(3 downto 1) <= switch(8 downto 6);
-						
-		else 
-			red   <= "0000" ;
-			blue  <= "0000" ;
-			green <= "0000" ;
-					
-		end if;
-	end process; 
-	-- VGA MAIN ENDS
-	
-	
-   -- VGA_SYNC_GEN BEGINS
-	process(clk, rst)
-	begin
-		if(rst = '1') then
-		
-		v_count_r <= 0;
-		h_count_r <= 0;
-		
-		elsif (rising_edge(clk)) then 
-			
-			h_count_r <= h_count_r + 1;  --(increment by 1)
-			
-			if(h_count_r >= H_MAX+1) then--799 value found in vga_lib file under "H_MAX"
-				
-				h_count_r <= 0;
-			end if;	
-			
-			if(h_count_r = H_VERT_INC) then--699 value found in vga_lib file under "H_VERT_INC"
-				
-				v_count_r <= v_count_r + 1; -- (increment by 1)
-			end if;
-				
-			if(v_count_r >= V_MAX+1) then--524 value found in vga_lib file under "V_MAX"
-				
-				v_count_r <= 0;	
-			end if;		
-		end if;
-	end process;
-	
-	h_count <= to_unsigned(h_count_r, 10);
-	v_count <= to_unsigned(v_count_r, 10);
-	
-	process(h_count_r, v_count_r)
-	begin
-		if (h_count_r > HSYNC_BEGIN and h_count_r < HSYNC_END) then 
-			h_sync <= '0';
-		else
-			h_sync <= '1';
-		end if; 
-		
-		if (v_count_r > VSYNC_BEGIN-2 and v_count_r < VSYNC_END) then 
-			v_sync <= '0';
-		else
-			v_sync <= '1';
-		end if;
-		
-		if (h_count_r <= (H_DISPLAY_END ) and v_count_r <= (V_DISPLAY_END )) then 
-			video_on <= '1';
-		else
-			video_on <= '0';
-		end if;
-		
-	end process;
 
+	sync: entity work.vga_sync_gen
+		port map (clk => clk,
+				  rst => rst,
+				  h_count => h_count,
+					v_count => v_count,
+					h_sync => temp_h_sync,
+					v_sync => temp_v_sync,
+					video_on => temp_video_on);
    -- VGA_SYNC_GEN ENDS	
+
+	draw: process(clk, rst)
+	begin
+		if rising_edge(clk) then
+			if rst = '1' then
+				v_count <= (others => '0');
+				h_count <= (others => '0');
+				pixel_on <= '0';
+				v_en <= '0';
+				h_en <= '0';
+			else
+				if unsigned(h_count) >= CENTERED_X_START and unsigned(h_count) <= CENTERED_X_END and unsigned(v_count) >= CENTERED_Y_START and unsigned(v_count) <= CENTERED_Y_END then
+					red <= "0111";
+					green <= "0011";
+					blue <= "1011";
+				else
+					red <= "0000";
+					green <= "0000";
+					blue <= "0000";
+				end if;
+			end if;
+		end if;
+	end process draw;
+
+
+	-- VGA MAIN ENDS
+	h_sync <= temp_h_sync;
+	v_sync <= temp_v_sync;
+	video_on <= temp_video_on;
 end default_arch;
