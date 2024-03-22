@@ -1,5 +1,5 @@
-Analysis & Elaboration report for P2
-Fri Mar 22 17:31:03 2024
+Analysis & Synthesis report for P2
+Fri Mar 22 18:23:02 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -7,10 +7,25 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: clk_div:U_CLK_DIV
+ 11. Port Connectivity Checks: "decoder7seg:U_LED0"
+ 12. Port Connectivity Checks: "decoder7seg:U_LED1"
+ 13. Port Connectivity Checks: "decoder7seg:U_LED2"
+ 14. Port Connectivity Checks: "decoder7seg:U_LED3"
+ 15. Port Connectivity Checks: "decoder7seg:U_LED4"
+ 16. Port Connectivity Checks: "decoder7seg:U_LED5"
+ 17. Port Connectivity Checks: "vga:U_VGA"
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
 
 
 
@@ -35,45 +50,29 @@ https://fpgasoftware.intel.com/eula.
 
 
 +-------------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                      ;
+; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status      ; Failed - Fri Mar 22 17:31:03 2024              ;
+; Analysis & Synthesis Status        ; Successful - Fri Mar 22 18:23:02 2024          ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; P2                                             ;
 ; Top-level Entity Name              ; top_level                                      ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; N/A until Partition Merge                      ;
-;     Total combinational functions  ; N/A until Partition Merge                      ;
-;     Dedicated logic registers      ; N/A until Partition Merge                      ;
-; Total registers                    ; N/A until Partition Merge                      ;
-; Total pins                         ; N/A until Partition Merge                      ;
-; Total virtual pins                 ; N/A until Partition Merge                      ;
-; Total memory bits                  ; N/A until Partition Merge                      ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                      ;
-; Total PLLs                         ; N/A until Partition Merge                      ;
-; UFM blocks                         ; N/A until Partition Merge                      ;
-; ADC blocks                         ; N/A until Partition Merge                      ;
+; Total logic elements               ; 54                                             ;
+;     Total combinational functions  ; 47                                             ;
+;     Dedicated logic registers      ; 30                                             ;
+; Total registers                    ; 30                                             ;
+; Total pins                         ; 75                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
 +------------------------------------+------------------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
+; Analysis & Synthesis Settings                                                                              ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
@@ -158,14 +157,227 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                         ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
+; vga_lib.vhd                      ; yes             ; User VHDL File  ; C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/vga_lib.vhd      ;         ;
+; top_level.vhd                    ; yes             ; User VHDL File  ; C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd    ;         ;
+; clk_div.vhd                      ; yes             ; User VHDL File  ; C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/clk_div.vhd      ;         ;
+; vga.vhd                          ; yes             ; User VHDL File  ; C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/vga.vhd          ;         ;
+; vga_sync_gen.vhd                 ; yes             ; User VHDL File  ; C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/vga_sync_gen.vhd ;         ;
+; decoder7seg.vhd                  ; yes             ; User VHDL File  ; C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/decoder7seg.vhd  ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                              ;
++---------------------------------------------+----------------------------+
+; Resource                                    ; Usage                      ;
++---------------------------------------------+----------------------------+
+; Estimated Total logic elements              ; 54                         ;
+;                                             ;                            ;
+; Total combinational functions               ; 47                         ;
+; Logic element usage by number of LUT inputs ;                            ;
+;     -- 4 input functions                    ; 13                         ;
+;     -- 3 input functions                    ; 3                          ;
+;     -- <=2 input functions                  ; 31                         ;
+;                                             ;                            ;
+; Logic elements by mode                      ;                            ;
+;     -- normal mode                          ; 29                         ;
+;     -- arithmetic mode                      ; 18                         ;
+;                                             ;                            ;
+; Total registers                             ; 30                         ;
+;     -- Dedicated logic registers            ; 30                         ;
+;     -- I/O registers                        ; 0                          ;
+;                                             ;                            ;
+; I/O pins                                    ; 75                         ;
+;                                             ;                            ;
+; Embedded Multiplier 9-bit elements          ; 0                          ;
+;                                             ;                            ;
+; Maximum fan-out node                        ; clk_div:U_CLK_DIV|temp_clk ;
+; Maximum fan-out                             ; 29                         ;
+; Total fan-out                               ; 285                        ;
+; Average fan-out                             ; 1.26                       ;
++---------------------------------------------+----------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                    ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------+--------------+--------------+
+; |top_level                 ; 47 (0)              ; 30 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 75   ; 0            ; 0          ; |top_level                             ; top_level    ; work         ;
+;    |clk_div:U_CLK_DIV|     ; 2 (2)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|clk_div:U_CLK_DIV           ; clk_div      ; work         ;
+;    |vga:U_VGA|             ; 45 (3)              ; 28 (8)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|vga:U_VGA                   ; vga          ; work         ;
+;       |vga_sync_gen:sync|  ; 42 (42)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|vga:U_VGA|vga_sync_gen:sync ; vga_sync_gen ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; vga:U_VGA|blue[2]                     ; Stuck at GND due to stuck port data_in ;
+; vga:U_VGA|green[2,3]                  ; Stuck at GND due to stuck port data_in ;
+; vga:U_VGA|red[3]                      ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 4 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 30    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 2     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 18    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clk_div:U_CLK_DIV ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; clk_in_freq    ; 2     ; Signed Integer                        ;
+; clk_out_freq   ; 1     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "decoder7seg:U_LED0" ;
++-------+-------+----------+---------------------+
+; Port  ; Type  ; Severity ; Details             ;
++-------+-------+----------+---------------------+
+; input ; Input ; Info     ; Stuck at GND        ;
++-------+-------+----------+---------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "decoder7seg:U_LED1" ;
++-------+-------+----------+---------------------+
+; Port  ; Type  ; Severity ; Details             ;
++-------+-------+----------+---------------------+
+; input ; Input ; Info     ; Stuck at GND        ;
++-------+-------+----------+---------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "decoder7seg:U_LED2" ;
++-------+-------+----------+---------------------+
+; Port  ; Type  ; Severity ; Details             ;
++-------+-------+----------+---------------------+
+; input ; Input ; Info     ; Stuck at GND        ;
++-------+-------+----------+---------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "decoder7seg:U_LED3" ;
++-------+-------+----------+---------------------+
+; Port  ; Type  ; Severity ; Details             ;
++-------+-------+----------+---------------------+
+; input ; Input ; Info     ; Stuck at GND        ;
++-------+-------+----------+---------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "decoder7seg:U_LED4" ;
++-------+-------+----------+---------------------+
+; Port  ; Type  ; Severity ; Details             ;
++-------+-------+----------+---------------------+
+; input ; Input ; Info     ; Stuck at GND        ;
++-------+-------+----------+---------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "decoder7seg:U_LED5" ;
++-------+-------+----------+---------------------+
+; Port  ; Type  ; Severity ; Details             ;
++-------+-------+----------+---------------------+
+; input ; Input ; Info     ; Stuck at GND        ;
++-------+-------+----------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "vga:U_VGA"                                                                              ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; switch   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; img_pos  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; video_on ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 75                          ;
+; cycloneiii_ff         ; 30                          ;
+;     CLR               ; 2                           ;
+;     ENA               ; 18                          ;
+;     plain             ; 10                          ;
+; cycloneiii_lcell_comb ; 49                          ;
+;     arith             ; 18                          ;
+;         2 data inputs ; 18                          ;
+;     normal            ; 31                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 13                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.21                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Fri Mar 22 17:30:55 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P2 -c P2 --analysis_and_elaboration
+    Info: Processing started: Fri Mar 22 18:22:53 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P2 -c P2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file vga_tb.vhd
@@ -196,14 +408,87 @@ Info (12021): Found 2 design units, including 1 entities, in source file vga_syn
 Info (12021): Found 2 design units, including 1 entities, in source file decoder7seg.vhd
     Info (12022): Found design unit 1: decoder7seg-rtl File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/decoder7seg.vhd Line: 11
     Info (12023): Found entity 1: decoder7seg File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/decoder7seg.vhd Line: 4
-Error (10476): VHDL error at vga.vhd(92): type of identifier "h_count" does not agree with its usage as "std_logic_vector" type File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/vga.vhd Line: 92
-Error (10558): VHDL error at vga.vhd(92): cannot associate formal port "h_count" of mode "out" with an expression File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/vga.vhd Line: 92
-Error (10476): VHDL error at vga.vhd(93): type of identifier "v_count" does not agree with its usage as "std_logic_vector" type File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/vga.vhd Line: 93
-Error (10558): VHDL error at vga.vhd(93): cannot associate formal port "v_count" of mode "out" with an expression File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/vga.vhd Line: 93
-Error: Quartus Prime Analysis & Elaboration was unsuccessful. 4 errors, 1 warning
-    Error: Peak virtual memory: 4797 megabytes
-    Error: Processing ended: Fri Mar 22 17:31:03 2024
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:14
+Info (12127): Elaborating entity "top_level" for the top level hierarchy
+Info (12128): Elaborating entity "vga" for hierarchy "vga:U_VGA" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 53
+Info (12128): Elaborating entity "vga_sync_gen" for hierarchy "vga:U_VGA|vga_sync_gen:sync" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/vga.vhd Line: 78
+Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:U_CLK_DIV" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 66
+Info (12128): Elaborating entity "decoder7seg" for hierarchy "decoder7seg:U_LED5" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 76
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "red[3]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 26
+    Warning (13410): Pin "green[2]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 26
+    Warning (13410): Pin "green[3]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 26
+    Warning (13410): Pin "blue[2]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 26
+    Warning (13410): Pin "led0[0]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 28
+    Warning (13410): Pin "led0[1]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 28
+    Warning (13410): Pin "led0[2]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 28
+    Warning (13410): Pin "led0[3]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 28
+    Warning (13410): Pin "led0[4]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 28
+    Warning (13410): Pin "led0[5]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 28
+    Warning (13410): Pin "led0[6]" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 28
+    Warning (13410): Pin "led0_dp" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 29
+    Warning (13410): Pin "led1[0]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 30
+    Warning (13410): Pin "led1[1]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 30
+    Warning (13410): Pin "led1[2]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 30
+    Warning (13410): Pin "led1[3]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 30
+    Warning (13410): Pin "led1[4]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 30
+    Warning (13410): Pin "led1[5]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 30
+    Warning (13410): Pin "led1[6]" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 30
+    Warning (13410): Pin "led1_dp" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 31
+    Warning (13410): Pin "led2[0]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 32
+    Warning (13410): Pin "led2[1]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 32
+    Warning (13410): Pin "led2[2]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 32
+    Warning (13410): Pin "led2[3]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 32
+    Warning (13410): Pin "led2[4]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 32
+    Warning (13410): Pin "led2[5]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 32
+    Warning (13410): Pin "led2[6]" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 32
+    Warning (13410): Pin "led2_dp" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 33
+    Warning (13410): Pin "led3[0]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 34
+    Warning (13410): Pin "led3[1]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 34
+    Warning (13410): Pin "led3[2]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 34
+    Warning (13410): Pin "led3[3]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 34
+    Warning (13410): Pin "led3[4]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 34
+    Warning (13410): Pin "led3[5]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 34
+    Warning (13410): Pin "led3[6]" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 34
+    Warning (13410): Pin "led3_dp" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 35
+    Warning (13410): Pin "led4[0]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 36
+    Warning (13410): Pin "led4[1]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 36
+    Warning (13410): Pin "led4[2]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 36
+    Warning (13410): Pin "led4[3]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 36
+    Warning (13410): Pin "led4[4]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 36
+    Warning (13410): Pin "led4[5]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 36
+    Warning (13410): Pin "led4[6]" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 36
+    Warning (13410): Pin "led4_dp" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 37
+    Warning (13410): Pin "led5[0]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 38
+    Warning (13410): Pin "led5[1]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 38
+    Warning (13410): Pin "led5[2]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 38
+    Warning (13410): Pin "led5[3]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 38
+    Warning (13410): Pin "led5[4]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 38
+    Warning (13410): Pin "led5[5]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 38
+    Warning (13410): Pin "led5[6]" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 38
+    Warning (13410): Pin "led5_dp" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 39
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "switch[0]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[1]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[2]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[3]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[4]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[5]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[6]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[7]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[8]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[9]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "button_n[1]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2/top_level.vhd Line: 25
+Info (21057): Implemented 130 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 62 output pins
+    Info (21061): Implemented 55 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 66 warnings
+    Info: Peak virtual memory: 4847 megabytes
+    Info: Processing ended: Fri Mar 22 18:23:02 2024
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:14
 
 

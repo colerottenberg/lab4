@@ -67,31 +67,20 @@ end vga;
 
 architecture default_arch of vga is
 
-  signal v_count : unsigned(COUNT_RANGE);
-  signal h_count : unsigned(COUNT_RANGE);
-  
-	signal pixel_on : std_logic;
-  
+    signal v_count : std_logic_vector(COUNT_RANGE);
+    signal h_count : std_logic_vector(COUNT_RANGE);
 	signal temp_h_sync, temp_v_sync : std_logic := '0';
 	signal temp_video_on : std_logic := '0';
-  
-  signal Concat : unsigned (11 downto 0);
-  
-  
   -- VGA_SYNC_GEN Signals
-  signal v_count_r : natural;
-  signal h_count_r : natural;
-
-
 begin 		
 	-- VGA MAIN BEGINS
 
 	sync: entity work.vga_sync_gen
 		port map (clk => clk,
-				  rst => rst,
-				  h_count => h_count,
-					v_count => v_count,
-					h_sync => temp_h_sync,
+				    rst => rst,
+				    h_count => h_count,
+				    v_count => v_count,
+				    h_sync => temp_h_sync,
 					v_sync => temp_v_sync,
 					video_on => temp_video_on);
    -- VGA_SYNC_GEN ENDS	
@@ -99,14 +88,10 @@ begin
 	draw: process(clk, rst)
 	begin
 		if rising_edge(clk) then
-			if rst = '1' then
-				v_count <= (others => '0');
-				h_count <= (others => '0');
-				pixel_on <= '0';
-				v_en <= '0';
-				h_en <= '0';
-			else
-				if unsigned(h_count) >= CENTERED_X_START and unsigned(h_count) <= CENTERED_X_END and unsigned(v_count) >= CENTERED_Y_START and unsigned(v_count) <= CENTERED_Y_END then
+			if rst = '0' then
+				if unsigned(h_count) >= CENTERED_X_START and unsigned(h_count) <= CENTERED_X_END and 
+                unsigned(v_count) >= CENTERED_Y_START and unsigned(v_count) <= CENTERED_Y_END and 
+                temp_video_on = '1' then
 					red <= "0111";
 					green <= "0011";
 					blue <= "1011";
