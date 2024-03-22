@@ -57,9 +57,10 @@ use work.vga_lib.all;
 entity vga is
     port (clk              : in  std_logic;
           rst              : in  std_logic;
-		  switch           : in  std_logic_vector(9 downto 0);
-          img_pos          : in  std_logic_vector(2 downto 0);
-          red, green, blue : out std_logic_vector(3 downto 0);
+          en               : in  std_logic;
+		  switch           : in  std_logic_vector(9 downto 0) := (others => '0');
+          img_pos          : in  std_logic_vector(2 downto 0) := (others => '0');
+          red, green, blue : out std_logic_vector(3 downto 0) := (others => '0');
           h_sync, v_sync   : out std_logic;
           video_on         : out std_logic);
 end vga;
