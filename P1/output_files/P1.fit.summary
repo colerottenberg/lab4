@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sun Mar 17 23:33:01 2024
-Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Fitter Status : Successful - Fri Mar 22 18:31:30 2024
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 Revision Name : P1
 Top-level Entity Name : top_level
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 149 / 49,760 ( < 1 % )
+Total logic elements : 150 / 49,760 ( < 1 % )
     Total combinational functions : 141 / 49,760 ( < 1 % )
     Dedicated logic registers : 97 / 49,760 ( < 1 % )
 Total registers : 97

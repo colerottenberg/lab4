@@ -69,12 +69,38 @@ architecture default_arch of vga is
 
     signal v_count : std_logic_vector(COUNT_RANGE);
     signal h_count : std_logic_vector(COUNT_RANGE);
-	signal temp_h_sync, temp_v_sync : std_logic := '0';
-	signal temp_video_on : std_logic := '0';
-  -- VGA_SYNC_GEN Signals
-begin 		
-	-- VGA MAIN BEGINS
+    -- Clocks
+    signal p_clk : std_logic := '0'; -- Pixel clock
+    signal slow_clk : std_logic := '0'; -- Slow clock
+    -- Internal Temp signals
+    signal temp_h_sync, temp_v_sync, temp_video_on : std_logic;
+		-- x and y coordinates of OBJ
+		signal x_pos, y_pos : integer := 200; -- 200 is the center of the screen
+		signal mov_x, mov_y : integer := 1;
+		-- Constants
+		constant speed : integer := 2;
+		constant size : integer := 64;
+		constant X_MAX : integer := 639;
+		constant Y_MAX : integer := 479;
+		signal v_on : std_logic := '0';
 
+
+
+
+begin 		
+	-- Slow Clock Divider splits the 50MHz clock into 1Hz
+	clk_div: entity work.clk_div
+		generic map(
+			clk_in_freq => 50e6,
+			clk_out_freq => 1
+		)
+		port map(
+			clk_in => clk,
+			rst => rst,
+			clk_out => slow_clk
+		);
+
+	-- VGA SYNC_GEN BEGINS
 	sync: entity work.vga_sync_gen
 		port map (clk => clk,
 				    rst => rst,
@@ -85,13 +111,36 @@ begin
 					video_on => temp_video_on);
    -- VGA_SYNC_GEN ENDS	
 
+   -- The object moves around the screen and will bounce off the edges
+   obj_move: process(slow_clk, rst)
+    begin
+        if rising_edge(slow_clk) then
+            if rst = '1' then
+                x_pos <= 200;
+                y_pos <= 200;
+                mov_x <= 1;
+                mov_y <= 1;
+            elsif en = '1' then
+                if x_pos + size >= X_MAX or x_pos <= 0 then
+                    mov_x <= -mov_x;
+                end if;
+                if y_pos + size >= Y_MAX or y_pos <= 0 then
+                    mov_y <= -mov_y;
+                end if;
+                x_pos <= x_pos + mov_x * speed;
+                y_pos <= y_pos + mov_y * speed;
+            end if;
+        end if;
+    end process obj_move;
+            
+
 	draw: process(clk, rst)
 	begin
 		if rising_edge(clk) then
 			if rst = '0' then
-				if unsigned(h_count) >= CENTERED_X_START and unsigned(h_count) <= CENTERED_X_END and 
-                unsigned(v_count) >= CENTERED_Y_START and unsigned(v_count) <= CENTERED_Y_END and 
-                temp_video_on = '1' then
+				if unsigned(h_count) >= to_unsigned(x_pos, h_count'length) and unsigned(h_count) < to_unsigned(x_pos + size, h_count'length) and
+                unsigned(v_count) >= to_unsigned(y_pos, v_count'length) and unsigned(v_count) < to_unsigned(y_pos + size, v_count'length) and
+                temp_video_on = '1' then  
 					red <= "0111";
 					green <= "0011";
 					blue <= "1011";
@@ -103,7 +152,6 @@ begin
 			end if;
 		end if;
 	end process draw;
-
 
 	-- VGA MAIN ENDS
 	h_sync <= temp_h_sync;
