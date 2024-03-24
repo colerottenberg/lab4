@@ -1,6 +1,6 @@
 ## Generated SDC file "P1.out.sdc"
 
-## Copyright (C) 2023  Intel Corporation. All rights reserved.
+## Copyright (C) 2022  Intel Corporation. All rights reserved.
 ## Your use of Intel Corporation's design tools, logic functions 
 ## and other software and tools, and any partner logic 
 ## functions, and any output files from any of the foregoing 
@@ -18,9 +18,9 @@
 
 ## VENDOR  "Altera"
 ## PROGRAM "Quartus Prime"
-## VERSION "Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition"
+## VERSION "Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition"
 
-## DATE    "Fri Mar 22 21:09:27 2024"
+## DATE    "Sat Mar 23 19:40:41 2024"
 
 ##
 ## DEVICE  "10M50DAF484C6GES"
@@ -39,7 +39,7 @@ set_time_format -unit ns -decimal_places 3
 # Create Clock
 #**************************************************************
 
-create_clock -name {clk} -period 1.000 -waveform { 0.000 0.500 } [get_ports {clk}]
+create_clock -name {de10} -period 20.000 -waveform { 0.000 10.000 } [get_ports {clk}]
 
 
 #**************************************************************
@@ -58,10 +58,10 @@ create_clock -name {clk} -period 1.000 -waveform { 0.000 0.500 } [get_ports {clk
 # Set Clock Uncertainty
 #**************************************************************
 
-set_clock_uncertainty -rise_from [get_clocks {clk}] -rise_to [get_clocks {clk}]  0.020  
-set_clock_uncertainty -rise_from [get_clocks {clk}] -fall_to [get_clocks {clk}]  0.020  
-set_clock_uncertainty -fall_from [get_clocks {clk}] -rise_to [get_clocks {clk}]  0.020  
-set_clock_uncertainty -fall_from [get_clocks {clk}] -fall_to [get_clocks {clk}]  0.020  
+set_clock_uncertainty -rise_from [get_clocks {de10}] -rise_to [get_clocks {de10}]  0.020  
+set_clock_uncertainty -rise_from [get_clocks {de10}] -fall_to [get_clocks {de10}]  0.020  
+set_clock_uncertainty -fall_from [get_clocks {de10}] -rise_to [get_clocks {de10}]  0.020  
+set_clock_uncertainty -fall_from [get_clocks {de10}] -fall_to [get_clocks {de10}]  0.020  
 
 
 #**************************************************************

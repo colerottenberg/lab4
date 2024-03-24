@@ -1,6 +1,6 @@
 Analysis & Synthesis report for P3
-Fri Mar 22 18:29:55 2024
-Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Sat Mar 23 20:17:23 2024
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
 ---------------------
@@ -36,7 +36,7 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -56,8 +56,8 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Mar 22 18:29:55 2024          ;
-; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Sat Mar 23 20:17:23 2024          ;
+; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; P3                                             ;
 ; Top-level Entity Name              ; top_level                                      ;
 ; Family                             ; MAX 10                                         ;
@@ -166,30 +166,31 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 24          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 16          ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                      ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                               ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
-; clk_div.vhd                      ; yes             ; User VHDL File  ; /home/crott/Documents/spring24/dd/lab4/P3/clk_div.vhd      ;         ;
-; vga_sync_gen.vhd                 ; yes             ; User VHDL File  ; /home/crott/Documents/spring24/dd/lab4/P3/vga_sync_gen.vhd ;         ;
-; vga_lib.vhd                      ; yes             ; User VHDL File  ; /home/crott/Documents/spring24/dd/lab4/P3/vga_lib.vhd      ;         ;
-; vga.vhd                          ; yes             ; User VHDL File  ; /home/crott/Documents/spring24/dd/lab4/P3/vga.vhd          ;         ;
-; top_level.vhd                    ; yes             ; User VHDL File  ; /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd    ;         ;
-; decoder7seg.vhd                  ; yes             ; User VHDL File  ; /home/crott/Documents/spring24/dd/lab4/P3/decoder7seg.vhd  ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                         ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
+; clk_div.vhd                      ; yes             ; User VHDL File  ; C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/clk_div.vhd      ;         ;
+; vga_sync_gen.vhd                 ; yes             ; User VHDL File  ; C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/vga_sync_gen.vhd ;         ;
+; vga_lib.vhd                      ; yes             ; User VHDL File  ; C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/vga_lib.vhd      ;         ;
+; vga.vhd                          ; yes             ; User VHDL File  ; C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/vga.vhd          ;         ;
+; top_level.vhd                    ; yes             ; User VHDL File  ; C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd    ;         ;
+; decoder7seg.vhd                  ; yes             ; User VHDL File  ; C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/decoder7seg.vhd  ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------------+
@@ -305,10 +306,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
-; 3:1                ; 56 bits   ; 112 LEs       ; 56 LEs               ; 56 LEs                 ; Yes        ; |top_level|vga:U_VGA|x_pos[23] ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |top_level|vga:U_VGA|mov_x[16] ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |top_level|vga:U_VGA|mov_y[26] ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top_level|vga:U_VGA|y_pos[7]  ;
+; 3:1                ; 56 bits   ; 112 LEs       ; 56 LEs               ; 56 LEs                 ; Yes        ; |top_level|vga:U_VGA|x_pos[19] ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |top_level|vga:U_VGA|mov_x[10] ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |top_level|vga:U_VGA|mov_y[30] ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top_level|vga:U_VGA|x_pos[7]  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
 
 
@@ -439,112 +440,112 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Fri Mar 22 18:29:51 2024
+    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+    Info: Processing started: Sat Mar 23 20:17:13 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P3 -c P3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file clk_div.vhd
-    Info (12022): Found design unit 1: clk_div-Behavioral File: /home/crott/Documents/spring24/dd/lab4/P3/clk_div.vhd Line: 21
-    Info (12023): Found entity 1: clk_div File: /home/crott/Documents/spring24/dd/lab4/P3/clk_div.vhd Line: 9
+    Info (12022): Found design unit 1: clk_div-Behavioral File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/clk_div.vhd Line: 21
+    Info (12023): Found entity 1: clk_div File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/clk_div.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file vga_sync_gen.vhd
-    Info (12022): Found design unit 1: vga_sync_gen-bhv File: /home/crott/Documents/spring24/dd/lab4/P3/vga_sync_gen.vhd Line: 18
-    Info (12023): Found entity 1: vga_sync_gen File: /home/crott/Documents/spring24/dd/lab4/P3/vga_sync_gen.vhd Line: 6
+    Info (12022): Found design unit 1: vga_sync_gen-bhv File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/vga_sync_gen.vhd Line: 18
+    Info (12023): Found entity 1: vga_sync_gen File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/vga_sync_gen.vhd Line: 6
 Info (12021): Found 1 design units, including 0 entities, in source file vga_lib.vhd
-    Info (12022): Found design unit 1: VGA_LIB File: /home/crott/Documents/spring24/dd/lab4/P3/vga_lib.vhd Line: 7
+    Info (12022): Found design unit 1: VGA_LIB File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/vga_lib.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file vga.vhd
-    Info (12022): Found design unit 1: vga-default_arch File: /home/crott/Documents/spring24/dd/lab4/P3/vga.vhd Line: 68
-    Info (12023): Found entity 1: vga File: /home/crott/Documents/spring24/dd/lab4/P3/vga.vhd Line: 57
+    Info (12022): Found design unit 1: vga-default_arch File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/vga.vhd Line: 68
+    Info (12023): Found entity 1: vga File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/vga.vhd Line: 57
 Info (12021): Found 2 design units, including 1 entities, in source file top_level.vhd
-    Info (12022): Found design unit 1: top_level-STR File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 43
-    Info (12023): Found entity 1: top_level File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 21
+    Info (12022): Found design unit 1: top_level-STR File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 43
+    Info (12023): Found entity 1: top_level File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 21
 Info (12021): Found 2 design units, including 1 entities, in source file decoder7seg.vhd
-    Info (12022): Found design unit 1: decoder7seg-rtl File: /home/crott/Documents/spring24/dd/lab4/P3/decoder7seg.vhd Line: 11
-    Info (12023): Found entity 1: decoder7seg File: /home/crott/Documents/spring24/dd/lab4/P3/decoder7seg.vhd Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file DE10_LITE_Golden_Top.v
-    Info (12023): Found entity 1: DE10_LITE_Golden_Top File: /home/crott/Documents/spring24/dd/lab4/P3/DE10_LITE_Golden_Top.v Line: 29
+    Info (12022): Found design unit 1: decoder7seg-rtl File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/decoder7seg.vhd Line: 11
+    Info (12023): Found entity 1: decoder7seg File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/decoder7seg.vhd Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file de10_lite_golden_top.v
+    Info (12023): Found entity 1: DE10_LITE_Golden_Top File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/DE10_LITE_Golden_Top.v Line: 29
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
-Info (12128): Elaborating entity "vga" for hierarchy "vga:U_VGA" File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 53
-Info (12128): Elaborating entity "clk_div" for hierarchy "vga:U_VGA|clk_div:clk_div" File: /home/crott/Documents/spring24/dd/lab4/P3/vga.vhd Line: 92
-Info (12128): Elaborating entity "vga_sync_gen" for hierarchy "vga:U_VGA|vga_sync_gen:sync" File: /home/crott/Documents/spring24/dd/lab4/P3/vga.vhd Line: 104
-Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:U_CLK_DIV" File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 66
-Info (12128): Elaborating entity "decoder7seg" for hierarchy "decoder7seg:U_LED5" File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 76
+Info (12128): Elaborating entity "vga" for hierarchy "vga:U_VGA" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 53
+Info (12128): Elaborating entity "clk_div" for hierarchy "vga:U_VGA|clk_div:clk_div" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/vga.vhd Line: 92
+Info (12128): Elaborating entity "vga_sync_gen" for hierarchy "vga:U_VGA|vga_sync_gen:sync" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/vga.vhd Line: 104
+Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:U_CLK_DIV" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 66
+Info (12128): Elaborating entity "decoder7seg" for hierarchy "decoder7seg:U_LED5" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 76
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "red[3]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 26
-    Warning (13410): Pin "green[2]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 26
-    Warning (13410): Pin "green[3]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 26
-    Warning (13410): Pin "blue[2]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 26
-    Warning (13410): Pin "led0[0]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 28
-    Warning (13410): Pin "led0[1]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 28
-    Warning (13410): Pin "led0[2]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 28
-    Warning (13410): Pin "led0[3]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 28
-    Warning (13410): Pin "led0[4]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 28
-    Warning (13410): Pin "led0[5]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 28
-    Warning (13410): Pin "led0[6]" is stuck at VCC File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 28
-    Warning (13410): Pin "led0_dp" is stuck at VCC File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 29
-    Warning (13410): Pin "led1[0]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 30
-    Warning (13410): Pin "led1[1]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 30
-    Warning (13410): Pin "led1[2]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 30
-    Warning (13410): Pin "led1[3]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 30
-    Warning (13410): Pin "led1[4]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 30
-    Warning (13410): Pin "led1[5]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 30
-    Warning (13410): Pin "led1[6]" is stuck at VCC File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 30
-    Warning (13410): Pin "led1_dp" is stuck at VCC File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 31
-    Warning (13410): Pin "led2[0]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 32
-    Warning (13410): Pin "led2[1]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 32
-    Warning (13410): Pin "led2[2]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 32
-    Warning (13410): Pin "led2[3]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 32
-    Warning (13410): Pin "led2[4]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 32
-    Warning (13410): Pin "led2[5]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 32
-    Warning (13410): Pin "led2[6]" is stuck at VCC File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 32
-    Warning (13410): Pin "led2_dp" is stuck at VCC File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 33
-    Warning (13410): Pin "led3[0]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 34
-    Warning (13410): Pin "led3[1]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 34
-    Warning (13410): Pin "led3[2]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 34
-    Warning (13410): Pin "led3[3]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 34
-    Warning (13410): Pin "led3[4]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 34
-    Warning (13410): Pin "led3[5]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 34
-    Warning (13410): Pin "led3[6]" is stuck at VCC File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 34
-    Warning (13410): Pin "led3_dp" is stuck at VCC File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 35
-    Warning (13410): Pin "led4[0]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 36
-    Warning (13410): Pin "led4[1]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 36
-    Warning (13410): Pin "led4[2]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 36
-    Warning (13410): Pin "led4[3]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 36
-    Warning (13410): Pin "led4[4]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 36
-    Warning (13410): Pin "led4[5]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 36
-    Warning (13410): Pin "led4[6]" is stuck at VCC File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 36
-    Warning (13410): Pin "led4_dp" is stuck at VCC File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 37
-    Warning (13410): Pin "led5[0]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 38
-    Warning (13410): Pin "led5[1]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 38
-    Warning (13410): Pin "led5[2]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 38
-    Warning (13410): Pin "led5[3]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 38
-    Warning (13410): Pin "led5[4]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 38
-    Warning (13410): Pin "led5[5]" is stuck at GND File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 38
-    Warning (13410): Pin "led5[6]" is stuck at VCC File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 38
-    Warning (13410): Pin "led5_dp" is stuck at VCC File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 39
+    Warning (13410): Pin "red[3]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 26
+    Warning (13410): Pin "green[2]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 26
+    Warning (13410): Pin "green[3]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 26
+    Warning (13410): Pin "blue[2]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 26
+    Warning (13410): Pin "led0[0]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 28
+    Warning (13410): Pin "led0[1]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 28
+    Warning (13410): Pin "led0[2]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 28
+    Warning (13410): Pin "led0[3]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 28
+    Warning (13410): Pin "led0[4]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 28
+    Warning (13410): Pin "led0[5]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 28
+    Warning (13410): Pin "led0[6]" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 28
+    Warning (13410): Pin "led0_dp" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 29
+    Warning (13410): Pin "led1[0]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 30
+    Warning (13410): Pin "led1[1]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 30
+    Warning (13410): Pin "led1[2]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 30
+    Warning (13410): Pin "led1[3]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 30
+    Warning (13410): Pin "led1[4]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 30
+    Warning (13410): Pin "led1[5]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 30
+    Warning (13410): Pin "led1[6]" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 30
+    Warning (13410): Pin "led1_dp" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 31
+    Warning (13410): Pin "led2[0]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 32
+    Warning (13410): Pin "led2[1]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 32
+    Warning (13410): Pin "led2[2]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 32
+    Warning (13410): Pin "led2[3]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 32
+    Warning (13410): Pin "led2[4]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 32
+    Warning (13410): Pin "led2[5]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 32
+    Warning (13410): Pin "led2[6]" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 32
+    Warning (13410): Pin "led2_dp" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 33
+    Warning (13410): Pin "led3[0]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 34
+    Warning (13410): Pin "led3[1]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 34
+    Warning (13410): Pin "led3[2]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 34
+    Warning (13410): Pin "led3[3]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 34
+    Warning (13410): Pin "led3[4]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 34
+    Warning (13410): Pin "led3[5]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 34
+    Warning (13410): Pin "led3[6]" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 34
+    Warning (13410): Pin "led3_dp" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 35
+    Warning (13410): Pin "led4[0]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 36
+    Warning (13410): Pin "led4[1]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 36
+    Warning (13410): Pin "led4[2]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 36
+    Warning (13410): Pin "led4[3]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 36
+    Warning (13410): Pin "led4[4]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 36
+    Warning (13410): Pin "led4[5]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 36
+    Warning (13410): Pin "led4[6]" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 36
+    Warning (13410): Pin "led4_dp" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 37
+    Warning (13410): Pin "led5[0]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 38
+    Warning (13410): Pin "led5[1]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 38
+    Warning (13410): Pin "led5[2]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 38
+    Warning (13410): Pin "led5[3]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 38
+    Warning (13410): Pin "led5[4]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 38
+    Warning (13410): Pin "led5[5]" is stuck at GND File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 38
+    Warning (13410): Pin "led5[6]" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 38
+    Warning (13410): Pin "led5_dp" is stuck at VCC File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 39
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 10 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "switch[1]" File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 24
-    Warning (15610): No output dependent on input pin "switch[2]" File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 24
-    Warning (15610): No output dependent on input pin "switch[3]" File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 24
-    Warning (15610): No output dependent on input pin "switch[4]" File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 24
-    Warning (15610): No output dependent on input pin "switch[5]" File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 24
-    Warning (15610): No output dependent on input pin "switch[6]" File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 24
-    Warning (15610): No output dependent on input pin "switch[7]" File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 24
-    Warning (15610): No output dependent on input pin "switch[8]" File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 24
-    Warning (15610): No output dependent on input pin "switch[9]" File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 24
-    Warning (15610): No output dependent on input pin "button_n[1]" File: /home/crott/Documents/spring24/dd/lab4/P3/top_level.vhd Line: 25
+    Warning (15610): No output dependent on input pin "switch[1]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[2]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[3]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[4]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[5]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[6]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[7]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[8]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switch[9]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 24
+    Warning (15610): No output dependent on input pin "button_n[1]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 25
 Info (21057): Implemented 436 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 62 output pins
     Info (21061): Implemented 361 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 65 warnings
-    Info: Peak virtual memory: 495 megabytes
-    Info: Processing ended: Fri Mar 22 18:29:55 2024
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Peak virtual memory: 4846 megabytes
+    Info: Processing ended: Sat Mar 23 20:17:23 2024
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:16
 
 
