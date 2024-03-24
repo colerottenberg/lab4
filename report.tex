@@ -9,9 +9,12 @@
 \usepackage{geometry}
 \geometry{margin=1in}
 
-\title{EEL 4712C - Digital Design: Lab Report}
+\lstset{basicstyle=\ttfamily\color{blue}}
+\newcommand{\code}[1]{\lstinline|#1|}
+
+\title{EEL 4712C - Digital Design: Lab Report 4}
 \author{Cole Rottenberg \\ 11062528}
-\date{March 3rd, 2024}
+\date{March 3\textsuperscript{rd}, 2024}
 
 \lstset{
   language=VHDL,
@@ -74,6 +77,8 @@ end test;
 % This section should be 1-2 paragraphs long.
   The lab is broken into 4 individual parts and two groups of two. The first part deals with static timing analysis and the second part deals with implementing a basic VGA driver to display a box on a monitor. The third part deals with implementing a VGA driver to display a moving box on a monitor. The fourth part deals applying the same static timing analysis from the first part to the moving box from the third part.
 
+  The 2\textsuperscript{nd} and 3\textsuperscript{rd} part of the lab are the critical design parts of the lab that help us explore the capabilities of the VGA driver and how to implement it. The first and fourth part are more about understanding the timing of the VGA driver and how to properly implement it. The part two is split into three different entities(primarily), the VGA, the VGA sync generator, and the top level component. The inputs to the top level component are relatively static and aren't changing. The outputs are the VGA signals that are sent to the monitor. The signals sent to the monitor are the h\_sync, v\_sync, and the RGB signals. The system is designed to display a box on the monitor. The sync generator is responsible for generating the sync signals, however the VGA entity is responsible for applying the logic to these signals to display the box on the monitor.
+
 \subsection*{Design}
 % Describe the design decisions you made.
 % - What components did you use?
@@ -83,6 +88,14 @@ end test;
 % Explain your design choices(pros/cons).
 % Any designs made in prelab should be included here but more briefly.
 % This section should be 1-2 paragraphs long.
+
+The VGA sync generator is consisted of a single clocked process that iterates through a double condition statement. The first conditionally block check if the \code{h_count} is equal the \code{H_MAX} constant defined in our package. If they are equal to eachother, we reset the counter and go onto the next conditional block, which checks if the \code{v_count} is equal to the \code{V_MAX} constant defined in our package. If they are equal to eachother, we reset the counter and exit the process. However, if we the first conditional is false, we increment the \code{h_count} counter. If the second conditional is false, we increment the \code{v_count} counter. On a conceptual level this builds a sweeping motion across the rows and then columns until the end. The second part of the generator exist outside a process as three conditions for the \code{h_sync}, \code{v_sync}, and \code{video_on} signals.
+
+These signals are then passed up to the VGA entity which uses the \code{h_count} and \code{v_count} signals to determine the position of the box on the screen. The \code{draw} clocked process uses these counts to determine if the current pixel is within the define constants of: \code{CENTER\_X\_START}, \code{CENTER\_X\_END}, \code{CENTER\_Y\_START}, and \code{CENTER\_Y\_END}. If the pixel is within these bounds, the \code{red}, \code{green}, and \code{blue} signals are set to "0111", "0011", and "1011" respectively. Outside of the process, existing within the architecture, the \code{h_sync}, \code{v_sync}, and \code{video_on} signals are being outputted to the top level component.
+
+The design of the 3\textsuperscript{rd} part builds of the previous part as it uses an identical VGA sync generator. The VGA entity is modified and new values are used to move the box across the screen as well as change the direction of the box. We also need to make use of a clock divider to slow down the clock signal to 1Hz. This \code{slow\_clk} signal is then used to drive our \code{obj\_move} process. This process is responsible for moving the box across the screen. The \code{obj\_move} process uses a new set of signals and constants to determine the position of the box on the screen. It also uses logic to control directional changes when the box reaches the vertical or horizontal bounds of the screen.
+
+The top level entity controls the final output of the VGA signals to the monitor. The VGA entity passes the following outputs to the top level entity: \code{h\_sync}, \code{v\_sync}, \code{red}, \code{green}, \code{blue}, and \code{video\_on}. The top level entity then passes these signals to the VGA port which is connected to the monitor. 
 
 \subsection*{Implementation}
 % Describe the implementation process.
