@@ -113,7 +113,7 @@ In 3\textsuperscript{rd} part of the lab, we had to implement a clock divider to
 % - Did inputs match the expected outputs?
 % - Special cases?
 % Include if possible, timing diagram of photo/video of the system.
-There were multiple methods of testing the design and implementation. The 1\textsuperscript{st} method was to use the newly introduce timing analyzer tool in the Quartus Suite. This tool allowed use to check the timing of the VGA signals and ensure they were within the proper range. As seen in 
+There were multiple methods of testing the design and implementation. The 1\textsuperscript{st} method was to use the newly introduce timing analyzer tool in the Quartus Suite. This tool allowed use to check the timing of the VGA signals and ensure they were within the proper range. As seen in Figure \ref*{fig:timing-analysis}, by adjusting our clock capabilities to match our board's true clock period, we have ample time to display the box on the screen. The 2\textsuperscript{nd} method was to use the top level testbench.
 
 \subsection*{Conclusions}
 % Summarize in one paragraph, the work you did, the success and problems you encountered, and how to improve next in the future.
@@ -404,7 +404,8 @@ end default_arch;
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth]{images/vga-part-2.png}
+  \label{fig:timing-analysis}
+  \includegraphics[width=0.8\textwidth]{P4-Report-Timing-20ns.png}
   \caption{VGA Part 3 Timing Analysis}
 \end{figure}
 
