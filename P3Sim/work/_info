@@ -1,0 +1,328 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+Eclk_div
+Z0 w1711310560
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 20
+Z4 dC:/Users/coler/Documents/uf/spring24/dd/lab4/P3Sim
+Z5 8C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/clk_div.vhd
+Z6 FC:/Users/coler/Documents/uf/spring24/dd/lab4/P3/clk_div.vhd
+l0
+L9 1
+V@LJjjSMj[16KaVz[aPj[h3
+!s100 :mMh?>`ZO=><<U7g_]hn;3
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1711310937
+!i10b 1
+Z9 !s108 1711310937.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/clk_div.vhd|
+Z11 !s107 C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/clk_div.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+Z14 DEx4 work 7 clk_div 0 22 @LJjjSMj[16KaVz[aPj[h3
+!i122 20
+l27
+L21 25
+VoYla3llR@AK7<K=Q;lKb91
+!s100 fElJBj4e7FDD0>27l2zN_0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vDE10_LITE_Golden_Top
+R8
+!i10b 1
+!s100 ?j3UlP9ifGo>GC7kmUiKa1
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+Ifi[Slm:6N9@]Ozha0HWLQ1
+VDg1SIo80bB@j0V0VzS_@n1
+R4
+R0
+8C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/DE10_LITE_Golden_Top.v
+FC:/Users/coler/Documents/uf/spring24/dd/lab4/P3/DE10_LITE_Golden_Top.v
+!i122 21
+L0 29 111
+OV;L;2020.1;71
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/DE10_LITE_Golden_Top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/DE10_LITE_Golden_Top.v|
+!i113 1
+o-work work
+tCvgOpt 0
+n@d@e10_@l@i@t@e_@golden_@top
+Edecoder7seg
+R0
+R2
+R3
+!i122 22
+R4
+Z15 8C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/decoder7seg.vhd
+Z16 FC:/Users/coler/Documents/uf/spring24/dd/lab4/P3/decoder7seg.vhd
+l0
+L4 1
+Vi=UZUY9A<C>R]WD5zB=X]2
+!s100 Lhg>[RgDGE>f0lL=EHl323
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/decoder7seg.vhd|
+Z18 !s107 C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/decoder7seg.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+Z19 DEx4 work 11 decoder7seg 0 22 i=UZUY9A<C>R]WD5zB=X]2
+!i122 22
+l12
+L11 20
+V29;a_FhD2o:2KJfZ@55FG3
+!s100 E6_PB;FYUf1@X2J@TgU^d2
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Etop_level
+R0
+R2
+R3
+!i122 23
+R4
+Z20 8C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/top_level.vhd
+Z21 FC:/Users/coler/Documents/uf/spring24/dd/lab4/P3/top_level.vhd
+l0
+L21 1
+VWA::cKY;QiF4j??ij^T=Z3
+!s100 H8JSdYM297L3FORk_XS3=3
+R7
+32
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/top_level.vhd|
+Z23 !s107 C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/top_level.vhd|
+!i113 1
+R12
+R13
+Astr
+R19
+R14
+Z24 DPx4 work 7 vga_lib 0 22 ejChT:NKK:bX<BKLUd5@;1
+R1
+Z25 DEx4 work 3 vga 0 22 Zn1Hdhi5g9gkha9b0=VmD3
+R2
+R3
+DEx4 work 9 top_level 0 22 WA::cKY;QiF4j??ij^T=Z3
+!i122 23
+l49
+L43 65
+VC_=M12O2@HN2mIa6i5;5;1
+!s100 4`AcUzZB`NYSfnDjnKk]Q3
+R7
+32
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Evga
+R0
+R24
+R1
+R2
+R3
+!i122 24
+R4
+Z26 8C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga.vhd
+Z27 FC:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga.vhd
+l0
+L57 1
+VZn1Hdhi5g9gkha9b0=VmD3
+!s100 `aIGiDY=J>1ZMo6dU_Z5R0
+R7
+32
+R8
+!i10b 1
+R9
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga.vhd|
+Z29 !s107 C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga.vhd|
+!i113 1
+R12
+R13
+Adefault_arch
+Z30 DEx4 work 12 vga_sync_gen 0 22 dgUaXO`g`[PD^5JnPJAdN3
+R14
+R24
+R1
+R2
+R3
+R25
+!i122 24
+l90
+L68 93
+VeOLSo]CdUzDi@Z3F?daz=2
+!s100 cl0oEjT7oD@LO1dPNem1a1
+R7
+32
+R8
+!i10b 1
+R9
+R28
+R29
+!i113 1
+R12
+R13
+Pvga_lib
+R2
+R3
+!i122 25
+R0
+R4
+8C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga_lib.vhd
+FC:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga_lib.vhd
+l0
+L7 1
+VejChT:NKK:bX<BKLUd5@;1
+!s100 k5SVkk2M?VER>9SUHNTDN2
+R7
+32
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga_lib.vhd|
+!s107 C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga_lib.vhd|
+!i113 1
+R12
+R13
+Evga_sync_gen
+R0
+R24
+R1
+R2
+R3
+!i122 26
+R4
+Z31 8C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga_sync_gen.vhd
+Z32 FC:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga_sync_gen.vhd
+l0
+L6 1
+VdgUaXO`g`[PD^5JnPJAdN3
+!s100 hdhC8Md>BTQVO3:laZc:90
+R7
+32
+R8
+!i10b 1
+R9
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga_sync_gen.vhd|
+Z34 !s107 C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga_sync_gen.vhd|
+!i113 1
+R12
+R13
+Abhv
+R24
+R1
+R2
+R3
+R30
+!i122 26
+l23
+L18 36
+VE_bb@eMD61HOUT>ggCIE=3
+!s100 R=]zo7oGO=S?eCF2aUUPa3
+R7
+32
+R8
+!i10b 1
+R9
+R33
+R34
+!i113 1
+R12
+R13
+Evga_tb
+R0
+Z35 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+R24
+R1
+R2
+R3
+!i122 27
+R4
+Z36 8C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga_tb.vhd
+Z37 FC:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga_tb.vhd
+l0
+L9 1
+V?h8Hn7EG8DN8onf5z_BQI1
+!s100 m7oUOId1oOKW5`OdC=9>l1
+R7
+32
+R8
+!i10b 1
+R9
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga_tb.vhd|
+!s107 C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga_tb.vhd|
+!i113 1
+R12
+R13
+Atb
+R25
+R35
+R24
+R1
+R2
+R3
+DEx4 work 6 vga_tb 0 22 ?h8Hn7EG8DN8onf5z_BQI1
+!i122 27
+l25
+L12 291
+VlKVU=X0X1X`nzID=dj21[2
+!s100 eHV:a:mlm7RfWeA@304JB0
+R7
+32
+R8
+!i10b 1
+R9
+R38
+Z39 !s107 C:/Users/coler/Documents/uf/spring24/dd/lab4/P3/vga_tb.vhd|
+!i113 1
+R12
+R13
