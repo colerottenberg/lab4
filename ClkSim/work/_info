@@ -1,0 +1,97 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/coler/Documents/uf/spring24/dd/lab4/P3Sim
+Eclk_div
+Z0 w1711310560
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 4
+Z4 dC:/Users/coler/Documents/uf/spring24/dd/lab4/ClkSim
+Z5 8C:/Users/coler/Documents/uf/spring24/dd/lab4/P2/clk_div.vhd
+Z6 FC:/Users/coler/Documents/uf/spring24/dd/lab4/P2/clk_div.vhd
+l0
+L9 1
+V?Ng8Hb0Fn4X>Wj]>bMHzI0
+!s100 <d>Gz[@[H4_`1PzbU_I2J2
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1711315289
+!i10b 1
+Z9 !s108 1711315289.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/coler/Documents/uf/spring24/dd/lab4/P2/clk_div.vhd|
+Z11 !s107 C:/Users/coler/Documents/uf/spring24/dd/lab4/P2/clk_div.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+Z14 DEx4 work 7 clk_div 0 22 ?Ng8Hb0Fn4X>Wj]>bMHzI0
+!i122 4
+l27
+L21 25
+VoYla3llR@AK7<K=Q;lKb91
+!s100 fElJBj4e7FDD0>27l2zN_0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eclk_div_tb
+Z15 w1711315286
+R2
+R3
+!i122 5
+R4
+Z16 8C:/Users/coler/Documents/uf/spring24/dd/lab4/P2/clk_div_tb.vhd
+Z17 FC:/Users/coler/Documents/uf/spring24/dd/lab4/P2/clk_div_tb.vhd
+l0
+L6 1
+V?AHg_YnYU3A6DES8CR:972
+!s100 eY5_U0B1k^0V@l4oRnRM@1
+R7
+32
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/coler/Documents/uf/spring24/dd/lab4/P2/clk_div_tb.vhd|
+!s107 C:/Users/coler/Documents/uf/spring24/dd/lab4/P2/clk_div_tb.vhd|
+!i113 1
+R12
+R13
+Atb
+R1
+R14
+R2
+R3
+DEx4 work 10 clk_div_tb 0 22 ?AHg_YnYU3A6DES8CR:972
+!i122 5
+l12
+L9 22
+VhedcFM]nMBJBD9c4J<ah:2
+!s100 _6n`ONYbS112DS_ob_n;c0
+R7
+32
+R8
+!i10b 1
+R9
+R18
+Z19 !s107 C:/Users/coler/Documents/uf/spring24/dd/lab4/P2/clk_div_tb.vhd|
+!i113 1
+R12
+R13
