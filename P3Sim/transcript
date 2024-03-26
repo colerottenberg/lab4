@@ -1,28 +1,23 @@
-# 0 compiles, 8 failed with no errors.
 # Compile of clk_div.vhd was successful.
 # Compile of DE10_LITE_Golden_Top.v was successful.
 # Compile of decoder7seg.vhd was successful.
 # Compile of top_level.vhd was successful.
-# Compile of vga.vhd was successful.
+# Compile of vga.vhd failed with 3 errors.
 # Compile of vga_basic_tb.vhd was successful.
 # Compile of vga_lib.vhd was successful.
 # Compile of vga_sync_gen.vhd was successful.
 # Compile of vga_tb.vhd was successful with warnings.
-# 9 compiles, 0 failed with no errors.
-# Load canceled
-# Load canceled
+# 9 compiles, 1 failed with 3 errors.
+# Compile of clk_div.vhd was successful.
+# Compile of DE10_LITE_Golden_Top.v was successful.
+# Compile of decoder7seg.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of vga.vhd failed with 3 errors.
 # Compile of vga_basic_tb.vhd was successful.
-vsim -gui basic
-# vsim -gui basic 
-# Start time: 22:27:47 on Mar 25,2024
-# ** Error: (vsim-3170) Could not find 'basic'.
-#         Searched libraries:
-#             C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3Sim/work
-# Error loading design
-# End time: 22:27:48 on Mar 25,2024, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 7
-# Compile of vga_basic_tb.vhd was successful.
-# Load canceled
+# Compile of vga_lib.vhd was successful.
+# Compile of vga_sync_gen.vhd was successful.
+# Compile of vga_tb.vhd was successful with warnings.
+# 9 compiles, 1 failed with 3 errors.
 # Compile of clk_div.vhd was successful.
 # Compile of DE10_LITE_Golden_Top.v was successful.
 # Compile of decoder7seg.vhd was successful.
@@ -35,7 +30,7 @@ vsim -gui basic
 # 9 compiles, 0 failed with no errors.
 vsim -gui work.vga_basic_tb
 # vsim -gui work.vga_basic_tb 
-# Start time: 22:30:11 on Mar 25,2024
+# Start time: 20:05:12 on Mar 26,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -46,14 +41,29 @@ vsim -gui work.vga_basic_tb
 # Loading work.vga(default_arch)
 # Loading work.clk_div(behavioral)
 # Loading work.vga_sync_gen(bhv)
-add wave -position insertpoint sim:/vga_basic_tb/*
+add wave -position insertpoint sim:/vga_basic_tb/U_VGA/*
 run -all
-add wave -position end sim:/vga_basic_tb/U_VGA/sync/*
 # Break key hit
-# Break key hit
-# Break key hit
+# Break in Process line__28 at C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/clk_div.vhd line 28
 run -all
-add wave -position insertpoint sim:/vga_basic_tb/U_VGA/sync/*
+# Break key hit
+# Simulation stop requested.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Break in Process line__25 at C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/vga_sync_gen.vhd line 25
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Simulation stop requested.
+# WARNING: No extended dataflow license exists
 # Compile of clk_div.vhd was successful.
 # Compile of DE10_LITE_Golden_Top.v was successful.
 # Compile of decoder7seg.vhd was successful.
@@ -71,7 +81,13 @@ restart
 # Loading work.vga(default_arch)
 # Loading work.clk_div(behavioral)
 # Loading work.vga_sync_gen(bhv)
-add wave -position insertpoint sim:/vga_basic_tb/U_VGA/sync/*
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Simulation stop requested.
+restart
 # Compile of clk_div.vhd was successful.
 # Compile of DE10_LITE_Golden_Top.v was successful.
 # Compile of decoder7seg.vhd was successful.
@@ -82,24 +98,37 @@ add wave -position insertpoint sim:/vga_basic_tb/U_VGA/sync/*
 # Compile of vga_sync_gen.vhd was successful.
 # Compile of vga_tb.vhd was successful with warnings.
 # 9 compiles, 0 failed with no errors.
-vsim -gui work.vga_basic_tb
-# End time: 23:03:12 on Mar 25,2024, Elapsed time: 0:33:01
-# Errors: 0, Warnings: 5
-# vsim -gui work.vga_basic_tb 
-# Start time: 23:03:12 on Mar 25,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # Loading work.vga_lib
-# Loading ieee.std_logic_textio(body)
 # Loading work.vga_basic_tb(tb)
 # Loading work.vga(default_arch)
 # Loading work.clk_div(behavioral)
 # Loading work.vga_sync_gen(bhv)
-add wave -position insertpoint sim:/vga_basic_tb/U_VGA/sync/*
 run -all
-add wave -position insertpoint sim:/vga_basic_tb/U_VGA/obj_move/*
-# (vish-4014) No objects found matching 'sim:/vga_basic_tb/U_VGA/obj_move/*'.
-# End time: 23:05:05 on Mar 25,2024, Elapsed time: 0:01:53
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of clk_div.vhd was successful.
+# Compile of DE10_LITE_Golden_Top.v was successful.
+# Compile of decoder7seg.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of vga.vhd was successful.
+# Compile of vga_basic_tb.vhd was successful.
+# Compile of vga_lib.vhd was successful.
+# Compile of vga_sync_gen.vhd was successful.
+# Compile of vga_tb.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.vga_lib
+# Loading work.vga_basic_tb(tb)
+# Loading work.vga(default_arch)
+# Loading work.clk_div(behavioral)
+# Loading work.vga_sync_gen(bhv)
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# End time: 16:36:58 on Mar 26,2024, Elapsed time: -3:-28:-14
 # Errors: 0, Warnings: 1

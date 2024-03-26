@@ -109,7 +109,12 @@ begin
 
    -- The object moves around the screen and will bounce off the edges
    obj_move: process(slow_clk, rst)
+	 	-- Assigning temp variables to movement and position variables
+		variable temp_mov_x: integer;
+		variable temp_mov_y: integer;
     begin
+				temp_mov_x := mov_x;
+				temp_mov_y := mov_y;
         if rising_edge(slow_clk) then
             if rst = '1' then
                 x_pos <= 200;
@@ -119,12 +124,14 @@ begin
             else
                 if x_pos + size >= X_MAX or x_pos <= 0 then
                     mov_x <= -1 * mov_x;
-                end if;
+										temp_mov_x := -1 * temp_mov_x;
+								end if;
                 if y_pos + size >= Y_MAX or y_pos <= 0 then
                     mov_y <= -1 * mov_y;
+										temp_mov_y := -1 * temp_mov_y;
                 end if;
-                x_pos <= x_pos + (mov_x * speed);
-                y_pos <= y_pos + (mov_y * speed);
+                x_pos <= x_pos + (temp_mov_x * speed);
+                y_pos <= y_pos + (temp_mov_y * speed);
             end if;
         end if;
     end process obj_move;

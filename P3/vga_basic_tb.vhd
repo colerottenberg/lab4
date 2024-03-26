@@ -43,6 +43,7 @@ begin  -- TB
         --------------------------------------------------------------------------------
         -- Begin Running VGA Test
         --------------------------------------------------------------------------------
+        clkEn <= '1';
         rst     <= '1';
         en      <= '0';
         for i in 0 to 4 loop
@@ -50,6 +51,11 @@ begin  -- TB
         end loop;
         rst <= '0';
         en <= '1';
+        for i in 0 to 5000 loop
+            wait until rising_edge(clk);
+        end loop;
+        clkEn <= '0';
+        wait;
 
     end process;
 end TB;
