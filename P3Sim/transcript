@@ -1,22 +1,105 @@
+# 0 compiles, 8 failed with no errors.
 # Compile of clk_div.vhd was successful.
-# Compile of clk_div_tb.vhd failed with 1 errors.
-# 2 compiles, 1 failed with 1 error.
+# Compile of DE10_LITE_Golden_Top.v was successful.
+# Compile of decoder7seg.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of vga.vhd was successful.
+# Compile of vga_basic_tb.vhd was successful.
+# Compile of vga_lib.vhd was successful.
+# Compile of vga_sync_gen.vhd was successful.
+# Compile of vga_tb.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+# Load canceled
+# Load canceled
+# Compile of vga_basic_tb.vhd was successful.
+vsim -gui basic
+# vsim -gui basic 
+# Start time: 22:27:47 on Mar 25,2024
+# ** Error: (vsim-3170) Could not find 'basic'.
+#         Searched libraries:
+#             C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3Sim/work
+# Error loading design
+# End time: 22:27:48 on Mar 25,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 7
+# Compile of vga_basic_tb.vhd was successful.
+# Load canceled
 # Compile of clk_div.vhd was successful.
-# Compile of clk_div_tb.vhd failed with 1 errors.
-# 2 compiles, 1 failed with 1 error.
-# Compile of clk_div.vhd was successful.
-# Compile of clk_div_tb.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.clk_div_tb
-# vsim -gui work.clk_div_tb 
-# Start time: 17:21:38 on Mar 24,2024
+# Compile of DE10_LITE_Golden_Top.v was successful.
+# Compile of decoder7seg.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of vga.vhd was successful.
+# Compile of vga_basic_tb.vhd was successful.
+# Compile of vga_lib.vhd was successful.
+# Compile of vga_sync_gen.vhd was successful.
+# Compile of vga_tb.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.vga_basic_tb
+# vsim -gui work.vga_basic_tb 
+# Start time: 22:30:11 on Mar 25,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.clk_div_tb(tb)
+# Loading work.vga_lib
+# Loading ieee.std_logic_textio(body)
+# Loading work.vga_basic_tb(tb)
+# Loading work.vga(default_arch)
 # Loading work.clk_div(behavioral)
-add wave -position insertpoint sim:/clk_div_tb/*
+# Loading work.vga_sync_gen(bhv)
+add wave -position insertpoint sim:/vga_basic_tb/*
 run -all
+add wave -position end sim:/vga_basic_tb/U_VGA/sync/*
 # Break key hit
-# Simulation stop requested.
+# Break key hit
+# Break key hit
+run -all
+add wave -position insertpoint sim:/vga_basic_tb/U_VGA/sync/*
+# Compile of clk_div.vhd was successful.
+# Compile of DE10_LITE_Golden_Top.v was successful.
+# Compile of decoder7seg.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of vga.vhd was successful.
+# Compile of vga_basic_tb.vhd was successful.
+# Compile of vga_lib.vhd was successful.
+# Compile of vga_sync_gen.vhd was successful.
+# Compile of vga_tb.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.vga_lib
+# Loading work.vga_basic_tb(tb)
+# Loading work.vga(default_arch)
+# Loading work.clk_div(behavioral)
+# Loading work.vga_sync_gen(bhv)
+add wave -position insertpoint sim:/vga_basic_tb/U_VGA/sync/*
+# Compile of clk_div.vhd was successful.
+# Compile of DE10_LITE_Golden_Top.v was successful.
+# Compile of decoder7seg.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of vga.vhd was successful.
+# Compile of vga_basic_tb.vhd was successful.
+# Compile of vga_lib.vhd was successful.
+# Compile of vga_sync_gen.vhd was successful.
+# Compile of vga_tb.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.vga_basic_tb
+# End time: 23:03:12 on Mar 25,2024, Elapsed time: 0:33:01
+# Errors: 0, Warnings: 5
+# vsim -gui work.vga_basic_tb 
+# Start time: 23:03:12 on Mar 25,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.vga_lib
+# Loading ieee.std_logic_textio(body)
+# Loading work.vga_basic_tb(tb)
+# Loading work.vga(default_arch)
+# Loading work.clk_div(behavioral)
+# Loading work.vga_sync_gen(bhv)
+add wave -position insertpoint sim:/vga_basic_tb/U_VGA/sync/*
+run -all
+add wave -position insertpoint sim:/vga_basic_tb/U_VGA/obj_move/*
+# (vish-4014) No objects found matching 'sim:/vga_basic_tb/U_VGA/obj_move/*'.
+# End time: 23:05:05 on Mar 25,2024, Elapsed time: 0:01:53
+# Errors: 0, Warnings: 1

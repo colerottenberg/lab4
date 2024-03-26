@@ -1,0 +1,93 @@
+# Compile of clk_div.vhd was successful.
+# Compile of clk_div_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DE10_LITE_Golden_Top.v was successful.
+# Compile of decoder7seg.vhd was successful.
+# Compile of top_level.vhd failed with 3 errors.
+# Compile of vga.vhd was successful.
+# Compile of vga_controller.vhd was successful.
+# Compile of vga_lib.vhd was successful.
+# Compile of vga_sync_gen.vhd was successful.
+# Compile of vga_tb.vhd was successful with warnings.
+# 11 compiles, 1 failed with 3 errors.
+# Compile of clk_div.vhd was successful.
+# Compile of clk_div_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DE10_LITE_Golden_Top.v was successful.
+# Compile of decoder7seg.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of vga.vhd was successful.
+# Compile of vga_controller.vhd was successful.
+# Compile of vga_lib.vhd was successful.
+# Compile of vga_sync_gen.vhd was successful.
+# Compile of vga_tb.vhd was successful with warnings.
+# 11 compiles, 0 failed with no errors.
+# Compile of clk_div.vhd was successful.
+# Compile of clk_div_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DE10_LITE_Golden_Top.v was successful.
+# Compile of decoder7seg.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of vga.vhd was successful.
+# Compile of vga_controller.vhd was successful.
+# Compile of vga_lib.vhd was successful.
+# Compile of vga_sync_gen.vhd was successful.
+# Compile of vga_tb.vhd was successful with warnings.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.vga_tb
+# vsim -gui work.vga_tb 
+# Start time: 21:25:19 on Mar 25,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.vga_lib
+# Loading ieee.std_logic_textio(body)
+# Loading work.vga_tb(tb)
+# Loading work.vga(default_arch)
+# Loading work.vga_sync_gen(bhv)
+add wave -position insertpoint sim:/vga_tb/*
+run -all
+# ** Warning: S distance too short: 137931667 ps. Expected: 350000000 ps
+#    Time: 32721580 ns  Iteration: 3  Instance: /vga_tb
+# ** Error: 32583648333 ps -- 32721580000 ps
+#    Time: 32721580 ns  Iteration: 3  Instance: /vga_tb
+# ** Note: Simulation Finished
+#    Time: 32721800 ns  Iteration: 0  Instance: /vga_tb
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Compile of clk_div.vhd was successful.
+# Compile of clk_div_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of DE10_LITE_Golden_Top.v was successful.
+# Compile of decoder7seg.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of vga.vhd was successful.
+# Compile of vga_controller.vhd was successful.
+# Compile of vga_lib.vhd was successful.
+# Compile of vga_sync_gen.vhd was successful.
+# Compile of vga_tb.vhd was successful with warnings.
+# 11 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: S distance too short: 137931667 ps. Expected: 350000000 ps
+#    Time: 32721580 ns  Iteration: 3  Instance: /vga_tb
+# ** Error: 32583648333 ps -- 32721580000 ps
+#    Time: 32721580 ns  Iteration: 3  Instance: /vga_tb
+# ** Note: Simulation Finished
+#    Time: 32721800 ns  Iteration: 0  Instance: /vga_tb
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# End time: 22:26:01 on Mar 25,2024, Elapsed time: 1:00:42
+# Errors: 1, Warnings: 3
+# Closing project C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P2Sim/P2Sim.mpf

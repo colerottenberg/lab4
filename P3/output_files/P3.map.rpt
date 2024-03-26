@@ -1,5 +1,5 @@
 Analysis & Synthesis report for P3
-Sat Mar 23 20:17:23 2024
+Mon Mar 25 22:59:39 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -56,15 +56,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Mar 23 20:17:23 2024          ;
+; Analysis & Synthesis Status        ; Successful - Mon Mar 25 22:59:39 2024          ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; P3                                             ;
 ; Top-level Entity Name              ; top_level                                      ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 360                                            ;
-;     Total combinational functions  ; 353                                            ;
-;     Dedicated logic registers      ; 121                                            ;
-; Total registers                    ; 121                                            ;
+; Total logic elements               ; 355                                            ;
+;     Total combinational functions  ; 348                                            ;
+;     Dedicated logic registers      ; 115                                            ;
+; Total registers                    ; 115                                            ;
 ; Total pins                         ; 75                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
@@ -198,20 +198,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------------+
 ; Resource                                    ; Usage             ;
 +---------------------------------------------+-------------------+
-; Estimated Total logic elements              ; 360               ;
+; Estimated Total logic elements              ; 355               ;
 ;                                             ;                   ;
-; Total combinational functions               ; 353               ;
+; Total combinational functions               ; 348               ;
 ; Logic element usage by number of LUT inputs ;                   ;
-;     -- 4 input functions                    ; 64                ;
-;     -- 3 input functions                    ; 108               ;
-;     -- <=2 input functions                  ; 181               ;
+;     -- 4 input functions                    ; 74                ;
+;     -- 3 input functions                    ; 103               ;
+;     -- <=2 input functions                  ; 171               ;
 ;                                             ;                   ;
 ; Logic elements by mode                      ;                   ;
-;     -- normal mode                          ; 168               ;
-;     -- arithmetic mode                      ; 185               ;
+;     -- normal mode                          ; 170               ;
+;     -- arithmetic mode                      ; 178               ;
 ;                                             ;                   ;
-; Total registers                             ; 121               ;
-;     -- Dedicated logic registers            ; 121               ;
+; Total registers                             ; 115               ;
+;     -- Dedicated logic registers            ; 115               ;
 ;     -- I/O registers                        ; 0                 ;
 ;                                             ;                   ;
 ; I/O pins                                    ; 75                ;
@@ -219,9 +219,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0                 ;
 ;                                             ;                   ;
 ; Maximum fan-out node                        ; button_n[0]~input ;
-; Maximum fan-out                             ; 103               ;
-; Total fan-out                               ; 1372              ;
-; Average fan-out                             ; 2.20              ;
+; Maximum fan-out                             ; 96                ;
+; Total fan-out                               ; 1297              ;
+; Average fan-out                             ; 2.12              ;
 +---------------------------------------------+-------------------+
 
 
@@ -230,10 +230,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------+--------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                    ; Entity Name  ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------+--------------+--------------+
-; |top_level                 ; 353 (0)             ; 121 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 75   ; 0            ; 0          ; |top_level                             ; top_level    ; work         ;
-;    |clk_div:U_CLK_DIV|     ; 2 (2)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|clk_div:U_CLK_DIV           ; clk_div      ; work         ;
-;    |vga:U_VGA|             ; 351 (258)           ; 119 (72)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|vga:U_VGA                   ; vga          ; work         ;
-;       |clk_div:clk_div|    ; 47 (47)             ; 27 (27)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|vga:U_VGA|clk_div:clk_div   ; clk_div      ; work         ;
+; |top_level                 ; 348 (0)             ; 115 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 75   ; 0            ; 0          ; |top_level                             ; top_level    ; work         ;
+;    |clk_div:U_CLK_DIV|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|clk_div:U_CLK_DIV           ; clk_div      ; work         ;
+;    |vga:U_VGA|             ; 347 (265)           ; 114 (72)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|vga:U_VGA                   ; vga          ; work         ;
+;       |clk_div:clk_div|    ; 36 (36)             ; 22 (22)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|vga:U_VGA|clk_div:clk_div   ; clk_div      ; work         ;
 ;       |vga_sync_gen:sync|  ; 46 (46)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|vga:U_VGA|vga_sync_gen:sync ; vga_sync_gen ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -249,13 +249,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; vga:U_VGA|red[3]                       ; Stuck at GND due to stuck port data_in ;
 ; vga:U_VGA|y_pos[0]                     ; Stuck at GND due to stuck port data_in ;
 ; vga:U_VGA|x_pos[0]                     ; Stuck at GND due to stuck port data_in ;
+; clk_div:U_CLK_DIV|counter              ; Stuck at GND due to stuck port data_in ;
 ; vga:U_VGA|mov_y[0]                     ; Stuck at VCC due to stuck port data_in ;
 ; vga:U_VGA|mov_x[0]                     ; Stuck at VCC due to stuck port data_in ;
 ; vga:U_VGA|mov_y[31]                    ; Lost fanout                            ;
 ; vga:U_VGA|mov_x[31]                    ; Lost fanout                            ;
 ; vga:U_VGA|mov_x[1..9,11..30]           ; Merged with vga:U_VGA|mov_x[10]        ;
 ; vga:U_VGA|mov_y[1..9,11..30]           ; Merged with vga:U_VGA|mov_y[10]        ;
-; Total Number of Removed Registers = 68 ;                                        ;
+; Total Number of Removed Registers = 69 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
 
@@ -276,12 +277,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 121   ;
+; Total registers                              ; 115   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 29    ;
+; Number of registers using Asynchronous Clear ; 23    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 80    ;
+; Number of registers using Clock Enable       ; 18    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -291,12 +292,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; vga:U_VGA|y_pos[7]                     ; 4       ;
-; vga:U_VGA|y_pos[6]                     ; 4       ;
-; vga:U_VGA|y_pos[3]                     ; 4       ;
-; vga:U_VGA|x_pos[7]                     ; 4       ;
-; vga:U_VGA|x_pos[6]                     ; 4       ;
-; vga:U_VGA|x_pos[3]                     ; 4       ;
+; vga:U_VGA|y_pos[6]                     ; 8       ;
+; vga:U_VGA|y_pos[7]                     ; 8       ;
+; vga:U_VGA|y_pos[3]                     ; 5       ;
+; vga:U_VGA|x_pos[7]                     ; 8       ;
+; vga:U_VGA|x_pos[6]                     ; 8       ;
+; vga:U_VGA|x_pos[3]                     ; 5       ;
 ; Total number of inverted registers = 6 ;         ;
 +----------------------------------------+---------+
 
@@ -306,10 +307,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
-; 3:1                ; 56 bits   ; 112 LEs       ; 56 LEs               ; 56 LEs                 ; Yes        ; |top_level|vga:U_VGA|x_pos[19] ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |top_level|vga:U_VGA|mov_x[10] ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |top_level|vga:U_VGA|mov_y[30] ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top_level|vga:U_VGA|x_pos[7]  ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |top_level|vga:U_VGA|mov_x[24] ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |top_level|vga:U_VGA|mov_y[15] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
 
 
@@ -319,7 +318,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Parameter Name ; Value    ; Type                                       ;
 +----------------+----------+--------------------------------------------+
 ; clk_in_freq    ; 50000000 ; Signed Integer                             ;
-; clk_out_freq   ; 1        ; Signed Integer                             ;
+; clk_out_freq   ; 20       ; Signed Integer                             ;
 +----------------+----------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -406,23 +405,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 75                          ;
-; cycloneiii_ff         ; 121                         ;
-;     CLR               ; 29                          ;
-;     ENA               ; 80                          ;
-;     plain             ; 12                          ;
-; cycloneiii_lcell_comb ; 355                         ;
-;     arith             ; 185                         ;
-;         2 data inputs ; 95                          ;
-;         3 data inputs ; 90                          ;
-;     normal            ; 170                         ;
+; cycloneiii_ff         ; 115                         ;
+;     CLR               ; 23                          ;
+;     ENA               ; 18                          ;
+;     plain             ; 74                          ;
+; cycloneiii_lcell_comb ; 350                         ;
+;     arith             ; 178                         ;
+;         2 data inputs ; 86                          ;
+;         3 data inputs ; 92                          ;
+;     normal            ; 172                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 6                           ;
-;         2 data inputs ; 80                          ;
-;         3 data inputs ; 18                          ;
-;         4 data inputs ; 64                          ;
+;         2 data inputs ; 79                          ;
+;         3 data inputs ; 11                          ;
+;         4 data inputs ; 74                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 9.40                        ;
-; Average LUT depth     ; 4.63                        ;
+; Max LUT depth         ; 8.40                        ;
+; Average LUT depth     ; 4.50                        ;
 +-----------------------+-----------------------------+
 
 
@@ -441,7 +440,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Sat Mar 23 20:17:13 2024
+    Info: Processing started: Mon Mar 25 22:59:30 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P3 -c P3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -466,8 +465,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file de10_li
     Info (12023): Found entity 1: DE10_LITE_Golden_Top File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/DE10_LITE_Golden_Top.v Line: 29
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
 Info (12128): Elaborating entity "vga" for hierarchy "vga:U_VGA" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 53
-Info (12128): Elaborating entity "clk_div" for hierarchy "vga:U_VGA|clk_div:clk_div" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/vga.vhd Line: 92
-Info (12128): Elaborating entity "vga_sync_gen" for hierarchy "vga:U_VGA|vga_sync_gen:sync" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/vga.vhd Line: 104
+Info (12128): Elaborating entity "clk_div" for hierarchy "vga:U_VGA|clk_div:clk_div" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/vga.vhd Line: 88
+Info (12128): Elaborating entity "vga_sync_gen" for hierarchy "vga:U_VGA|vga_sync_gen:sync" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/vga.vhd Line: 100
 Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:U_CLK_DIV" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 66
 Info (12128): Elaborating entity "decoder7seg" for hierarchy "decoder7seg:U_LED5" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 76
 Warning (13024): Output pins are stuck at VCC or GND
@@ -527,7 +526,8 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 10 input pin(s) that do not drive logic
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "switch[0]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 24
     Warning (15610): No output dependent on input pin "switch[1]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 24
     Warning (15610): No output dependent on input pin "switch[2]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 24
     Warning (15610): No output dependent on input pin "switch[3]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 24
@@ -538,14 +538,14 @@ Warning (21074): Design contains 10 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "switch[8]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 24
     Warning (15610): No output dependent on input pin "switch[9]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 24
     Warning (15610): No output dependent on input pin "button_n[1]" File: C:/Users/cole/OneDrive/Documents/Sping24/dd/lab4/P3/top_level.vhd Line: 25
-Info (21057): Implemented 436 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 431 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 62 output pins
-    Info (21061): Implemented 361 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 65 warnings
-    Info: Peak virtual memory: 4846 megabytes
-    Info: Processing ended: Sat Mar 23 20:17:23 2024
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:16
+    Info (21061): Implemented 356 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 66 warnings
+    Info: Peak virtual memory: 4870 megabytes
+    Info: Processing ended: Mon Mar 25 22:59:39 2024
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:13
 
 

@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition"
 
--- DATE "03/22/2024 19:24:05"
+-- DATE "03/25/2024 21:46:02"
 
 -- 
 -- Device: Altera 10M50DAF484C6GES Package FBGA484
@@ -114,16 +114,16 @@ ENTITY 	top_level IS
 END top_level;
 
 -- Design Ports Information
--- switch[0]	=>  Location: PIN_AA7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- switch[1]	=>  Location: PIN_E10,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- switch[2]	=>  Location: PIN_B12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- switch[0]	=>  Location: PIN_B21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- switch[1]	=>  Location: PIN_N8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- switch[2]	=>  Location: PIN_E10,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- switch[3]	=>  Location: PIN_W9,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- switch[4]	=>  Location: PIN_W18,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- switch[5]	=>  Location: PIN_F15,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- switch[6]	=>  Location: PIN_F3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- switch[7]	=>  Location: PIN_W5,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- switch[8]	=>  Location: PIN_F7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- switch[9]	=>  Location: PIN_Y18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- switch[4]	=>  Location: PIN_AB5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- switch[5]	=>  Location: PIN_F16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- switch[6]	=>  Location: PIN_A6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- switch[7]	=>  Location: PIN_U3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- switch[8]	=>  Location: PIN_P13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- switch[9]	=>  Location: PIN_F7,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- button_n[1]	=>  Location: PIN_A7,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- red[0]	=>  Location: PIN_AA1,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- red[1]	=>  Location: PIN_V1,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -139,54 +139,54 @@ END top_level;
 -- blue[3]	=>  Location: PIN_N2,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- h_sync	=>  Location: PIN_N3,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- v_sync	=>  Location: PIN_N1,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led0[0]	=>  Location: PIN_K1,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led0[1]	=>  Location: PIN_U2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led0[2]	=>  Location: PIN_W7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led0[3]	=>  Location: PIN_V4,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led0[4]	=>  Location: PIN_K20,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led0[5]	=>  Location: PIN_W8,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led0[6]	=>  Location: PIN_AA5,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led0_dp	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led1[0]	=>  Location: PIN_U19,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led1[1]	=>  Location: PIN_C15,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led1[2]	=>  Location: PIN_AA3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led1[3]	=>  Location: PIN_AA13,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led1[4]	=>  Location: PIN_V18,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led1[5]	=>  Location: PIN_V14,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led1[6]	=>  Location: PIN_AB3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led1_dp	=>  Location: PIN_T18,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led2[0]	=>  Location: PIN_H14,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led2[1]	=>  Location: PIN_D15,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led2[2]	=>  Location: PIN_M15,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led2[3]	=>  Location: PIN_V5,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led2[4]	=>  Location: PIN_W17,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led2[5]	=>  Location: PIN_Y22,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led2[6]	=>  Location: PIN_M4,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led2_dp	=>  Location: PIN_C8,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led3[0]	=>  Location: PIN_AA20,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led3[1]	=>  Location: PIN_L8,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led3[2]	=>  Location: PIN_J8,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led3[3]	=>  Location: PIN_Y14,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led3[4]	=>  Location: PIN_Y8,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led3[5]	=>  Location: PIN_V3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led3[6]	=>  Location: PIN_J11,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led3_dp	=>  Location: PIN_C5,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led4[0]	=>  Location: PIN_C22,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led4[1]	=>  Location: PIN_T19,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led4[2]	=>  Location: PIN_Y6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led4[3]	=>  Location: PIN_W16,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led4[4]	=>  Location: PIN_D6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led0[0]	=>  Location: PIN_Y10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led0[1]	=>  Location: PIN_B1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led0[2]	=>  Location: PIN_R5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led0[3]	=>  Location: PIN_W8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led0[4]	=>  Location: PIN_AA11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led0[5]	=>  Location: PIN_W3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led0[6]	=>  Location: PIN_A16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led0_dp	=>  Location: PIN_F2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led1[0]	=>  Location: PIN_A8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led1[1]	=>  Location: PIN_Y5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led1[2]	=>  Location: PIN_L2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led1[3]	=>  Location: PIN_V10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led1[4]	=>  Location: PIN_Y8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led1[5]	=>  Location: PIN_V18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led1[6]	=>  Location: PIN_C4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led1_dp	=>  Location: PIN_AB3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led2[0]	=>  Location: PIN_U15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led2[1]	=>  Location: PIN_C13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led2[2]	=>  Location: PIN_V12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led2[3]	=>  Location: PIN_W5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led2[4]	=>  Location: PIN_AB8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led2[5]	=>  Location: PIN_W17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led2[6]	=>  Location: PIN_G22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led2_dp	=>  Location: PIN_C3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led3[0]	=>  Location: PIN_T3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led3[1]	=>  Location: PIN_W4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led3[2]	=>  Location: PIN_E20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led3[3]	=>  Location: PIN_L1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led3[4]	=>  Location: PIN_K15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led3[5]	=>  Location: PIN_AB9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led3[6]	=>  Location: PIN_J12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led3_dp	=>  Location: PIN_V3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led4[0]	=>  Location: PIN_Y20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led4[1]	=>  Location: PIN_R20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led4[2]	=>  Location: PIN_AB2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led4[3]	=>  Location: PIN_Y4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led4[4]	=>  Location: PIN_N21,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- led4[5]	=>  Location: PIN_H12,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led4[6]	=>  Location: PIN_AB5,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led4_dp	=>  Location: PIN_P10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led4[6]	=>  Location: PIN_F20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led4_dp	=>  Location: PIN_V4,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- led5[0]	=>  Location: PIN_H22,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- led5[1]	=>  Location: PIN_E8,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led5[2]	=>  Location: PIN_D1,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led5[3]	=>  Location: PIN_J12,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led5[4]	=>  Location: PIN_K9,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led5[5]	=>  Location: PIN_AB20,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led5[6]	=>  Location: PIN_R14,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- led5_dp	=>  Location: PIN_U3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led5[2]	=>  Location: PIN_A12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led5[3]	=>  Location: PIN_V22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led5[4]	=>  Location: PIN_V7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led5[5]	=>  Location: PIN_N9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led5[6]	=>  Location: PIN_H14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- led5_dp	=>  Location: PIN_AB14,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- button_n[0]	=>  Location: PIN_B8,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- clk50MHz	=>  Location: PIN_P11,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
@@ -224,7 +224,6 @@ SIGNAL ww_led5_dp : std_logic;
 SIGNAL \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ : std_logic_vector(4 DOWNTO 0);
 SIGNAL \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ : std_logic_vector(4 DOWNTO 0);
 SIGNAL \U_CLK_DIV|temp_clk~clkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
-SIGNAL \clk50MHz~inputclkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \switch[0]~input_o\ : std_logic;
 SIGNAL \switch[1]~input_o\ : std_logic;
 SIGNAL \switch[2]~input_o\ : std_logic;
@@ -303,23 +302,16 @@ SIGNAL \led5[5]~output_o\ : std_logic;
 SIGNAL \led5[6]~output_o\ : std_logic;
 SIGNAL \led5_dp~output_o\ : std_logic;
 SIGNAL \clk50MHz~input_o\ : std_logic;
-SIGNAL \clk50MHz~inputclkctrl_outclk\ : std_logic;
-SIGNAL \U_CLK_DIV|counter~0_combout\ : std_logic;
-SIGNAL \button_n[0]~input_o\ : std_logic;
-SIGNAL \U_CLK_DIV|counter~q\ : std_logic;
 SIGNAL \U_CLK_DIV|temp_clk~0_combout\ : std_logic;
 SIGNAL \U_CLK_DIV|temp_clk~feeder_combout\ : std_logic;
+SIGNAL \button_n[0]~input_o\ : std_logic;
 SIGNAL \U_CLK_DIV|temp_clk~q\ : std_logic;
 SIGNAL \U_CLK_DIV|temp_clk~clkctrl_outclk\ : std_logic;
+SIGNAL \U_VGA|sync|Add0~15\ : std_logic;
+SIGNAL \U_VGA|sync|Add0~16_combout\ : std_logic;
 SIGNAL \U_VGA|sync|Add1~0_combout\ : std_logic;
 SIGNAL \U_VGA|sync|Add1~1\ : std_logic;
 SIGNAL \U_VGA|sync|Add1~2_combout\ : std_logic;
-SIGNAL \U_VGA|sync|Add1~17\ : std_logic;
-SIGNAL \U_VGA|sync|Add1~18_combout\ : std_logic;
-SIGNAL \U_VGA|sync|h_counter~1_combout\ : std_logic;
-SIGNAL \U_VGA|sync|Equal0~0_combout\ : std_logic;
-SIGNAL \U_VGA|sync|Equal0~1_combout\ : std_logic;
-SIGNAL \U_VGA|sync|Equal0~2_combout\ : std_logic;
 SIGNAL \U_VGA|sync|h_counter~3_combout\ : std_logic;
 SIGNAL \U_VGA|sync|Add1~3\ : std_logic;
 SIGNAL \U_VGA|sync|Add1~4_combout\ : std_logic;
@@ -337,14 +329,26 @@ SIGNAL \U_VGA|sync|Add1~14_combout\ : std_logic;
 SIGNAL \U_VGA|sync|Add1~15\ : std_logic;
 SIGNAL \U_VGA|sync|Add1~16_combout\ : std_logic;
 SIGNAL \U_VGA|sync|h_counter~0_combout\ : std_logic;
+SIGNAL \U_VGA|sync|Add1~17\ : std_logic;
+SIGNAL \U_VGA|sync|Add1~18_combout\ : std_logic;
+SIGNAL \U_VGA|sync|h_counter~1_combout\ : std_logic;
+SIGNAL \U_VGA|sync|Equal0~1_combout\ : std_logic;
+SIGNAL \U_VGA|sync|Equal0~0_combout\ : std_logic;
+SIGNAL \U_VGA|sync|Equal0~2_combout\ : std_logic;
+SIGNAL \U_VGA|sync|Add0~17\ : std_logic;
+SIGNAL \U_VGA|sync|Add0~18_combout\ : std_logic;
+SIGNAL \U_VGA|sync|v_counter~4_combout\ : std_logic;
 SIGNAL \U_VGA|sync|Add0~0_combout\ : std_logic;
 SIGNAL \U_VGA|sync|v_counter~3_combout\ : std_logic;
+SIGNAL \U_VGA|sync|Equal1~1_combout\ : std_logic;
 SIGNAL \U_VGA|sync|Add0~1\ : std_logic;
 SIGNAL \U_VGA|sync|Add0~2_combout\ : std_logic;
 SIGNAL \U_VGA|sync|v_counter~2_combout\ : std_logic;
 SIGNAL \U_VGA|sync|Add0~3\ : std_logic;
 SIGNAL \U_VGA|sync|Add0~4_combout\ : std_logic;
 SIGNAL \U_VGA|sync|v_counter~0_combout\ : std_logic;
+SIGNAL \U_VGA|sync|Equal1~0_combout\ : std_logic;
+SIGNAL \U_VGA|sync|Equal1~2_combout\ : std_logic;
 SIGNAL \U_VGA|sync|Add0~5\ : std_logic;
 SIGNAL \U_VGA|sync|Add0~6_combout\ : std_logic;
 SIGNAL \U_VGA|sync|v_counter~1_combout\ : std_logic;
@@ -356,16 +360,8 @@ SIGNAL \U_VGA|sync|Add0~11\ : std_logic;
 SIGNAL \U_VGA|sync|Add0~12_combout\ : std_logic;
 SIGNAL \U_VGA|sync|Add0~13\ : std_logic;
 SIGNAL \U_VGA|sync|Add0~14_combout\ : std_logic;
-SIGNAL \U_VGA|sync|Add0~15\ : std_logic;
-SIGNAL \U_VGA|sync|Add0~16_combout\ : std_logic;
-SIGNAL \U_VGA|sync|Equal1~1_combout\ : std_logic;
-SIGNAL \U_VGA|sync|Equal1~0_combout\ : std_logic;
-SIGNAL \U_VGA|sync|Equal1~2_combout\ : std_logic;
-SIGNAL \U_VGA|sync|Add0~17\ : std_logic;
-SIGNAL \U_VGA|sync|Add0~18_combout\ : std_logic;
-SIGNAL \U_VGA|sync|v_counter~4_combout\ : std_logic;
-SIGNAL \U_VGA|draw~0_combout\ : std_logic;
 SIGNAL \U_VGA|draw~1_combout\ : std_logic;
+SIGNAL \U_VGA|draw~0_combout\ : std_logic;
 SIGNAL \U_VGA|draw~2_combout\ : std_logic;
 SIGNAL \U_VGA|red[0]~feeder_combout\ : std_logic;
 SIGNAL \U_VGA|red[1]~feeder_combout\ : std_logic;
@@ -425,15 +421,13 @@ ww_devpor <= devpor;
 \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ <= (\~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\);
 
 \U_CLK_DIV|temp_clk~clkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \U_CLK_DIV|temp_clk~q\);
-
-\clk50MHz~inputclkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \clk50MHz~input_o\);
 auto_generated_inst : hard_block
 PORT MAP (
 	devoe => ww_devoe,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor);
 
--- Location: LCCOMB_X44_Y43_N16
+-- Location: LCCOMB_X44_Y42_N12
 \~QUARTUS_CREATED_GND~I\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \~QUARTUS_CREATED_GND~I_combout\ = GND
@@ -614,7 +608,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \v_sync~output_o\);
 
--- Location: IOOBUF_X0_Y25_N2
+-- Location: IOOBUF_X34_Y0_N9
 \led0[0]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -626,7 +620,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led0[0]~output_o\);
 
--- Location: IOOBUF_X0_Y12_N23
+-- Location: IOOBUF_X22_Y39_N23
 \led0[1]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -638,7 +632,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led0[1]~output_o\);
 
--- Location: IOOBUF_X24_Y0_N9
+-- Location: IOOBUF_X0_Y15_N23
 \led0[2]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -650,7 +644,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led0[2]~output_o\);
 
--- Location: IOOBUF_X14_Y0_N16
+-- Location: IOOBUF_X24_Y0_N2
 \led0[3]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -662,7 +656,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led0[3]~output_o\);
 
--- Location: IOOBUF_X78_Y42_N2
+-- Location: IOOBUF_X40_Y0_N9
 \led0[4]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -674,7 +668,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led0[4]~output_o\);
 
--- Location: IOOBUF_X24_Y0_N2
+-- Location: IOOBUF_X18_Y0_N9
 \led0[5]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -686,7 +680,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led0[5]~output_o\);
 
--- Location: IOOBUF_X26_Y0_N2
+-- Location: IOOBUF_X60_Y54_N16
 \led0[6]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -698,7 +692,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led0[6]~output_o\);
 
--- Location: IOOBUF_X0_Y16_N16
+-- Location: IOOBUF_X0_Y27_N9
 \led0_dp~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -710,7 +704,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led0_dp~output_o\);
 
--- Location: IOOBUF_X78_Y15_N16
+-- Location: IOOBUF_X46_Y54_N2
 \led1[0]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -722,7 +716,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led1[0]~output_o\);
 
--- Location: IOOBUF_X60_Y54_N2
+-- Location: IOOBUF_X18_Y0_N2
 \led1[1]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -734,7 +728,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led1[1]~output_o\);
 
--- Location: IOOBUF_X26_Y0_N30
+-- Location: IOOBUF_X0_Y28_N9
 \led1[2]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -746,7 +740,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led1[2]~output_o\);
 
--- Location: IOOBUF_X49_Y0_N16
+-- Location: IOOBUF_X31_Y0_N23
 \led1[3]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -758,7 +752,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led1[3]~output_o\);
 
--- Location: IOOBUF_X78_Y15_N23
+-- Location: IOOBUF_X20_Y0_N2
 \led1[4]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -770,7 +764,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led1[4]~output_o\);
 
--- Location: IOOBUF_X54_Y0_N16
+-- Location: IOOBUF_X78_Y15_N23
 \led1[5]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -782,7 +776,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led1[5]~output_o\);
 
--- Location: IOOBUF_X22_Y0_N9
+-- Location: IOOBUF_X24_Y39_N2
 \led1[6]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -794,7 +788,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led1[6]~output_o\);
 
--- Location: IOOBUF_X78_Y20_N16
+-- Location: IOOBUF_X22_Y0_N9
 \led1_dp~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -806,7 +800,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led1_dp~output_o\);
 
--- Location: IOOBUF_X60_Y54_N23
+-- Location: IOOBUF_X56_Y0_N23
 \led2[0]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -818,7 +812,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led2[0]~output_o\);
 
--- Location: IOOBUF_X66_Y54_N16
+-- Location: IOOBUF_X58_Y54_N23
 \led2[1]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -830,7 +824,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led2[1]~output_o\);
 
--- Location: IOOBUF_X78_Y33_N23
+-- Location: IOOBUF_X38_Y0_N23
 \led2[2]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -842,7 +836,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led2[2]~output_o\);
 
--- Location: IOOBUF_X14_Y0_N9
+-- Location: IOOBUF_X14_Y0_N2
 \led2[3]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -854,7 +848,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led2[3]~output_o\);
 
--- Location: IOOBUF_X69_Y0_N9
+-- Location: IOOBUF_X31_Y0_N9
 \led2[4]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -866,7 +860,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led2[4]~output_o\);
 
--- Location: IOOBUF_X78_Y15_N9
+-- Location: IOOBUF_X69_Y0_N9
 \led2[5]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -878,7 +872,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led2[5]~output_o\);
 
--- Location: IOOBUF_X0_Y25_N16
+-- Location: IOOBUF_X78_Y31_N9
 \led2[6]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -890,7 +884,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led2[6]~output_o\);
 
--- Location: IOOBUF_X36_Y39_N30
+-- Location: IOOBUF_X20_Y39_N9
 \led2_dp~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -902,7 +896,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led2_dp~output_o\);
 
--- Location: IOOBUF_X62_Y0_N23
+-- Location: IOOBUF_X0_Y12_N16
 \led3[0]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -914,7 +908,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led3[0]~output_o\);
 
--- Location: IOOBUF_X0_Y27_N16
+-- Location: IOOBUF_X18_Y0_N16
 \led3[1]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -926,7 +920,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led3[1]~output_o\);
 
--- Location: IOOBUF_X0_Y36_N16
+-- Location: IOOBUF_X78_Y40_N2
 \led3[2]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -938,7 +932,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led3[2]~output_o\);
 
--- Location: IOOBUF_X51_Y0_N2
+-- Location: IOOBUF_X0_Y25_N9
 \led3[3]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -950,7 +944,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led3[3]~output_o\);
 
--- Location: IOOBUF_X20_Y0_N2
+-- Location: IOOBUF_X78_Y41_N16
 \led3[4]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -962,7 +956,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led3[4]~output_o\);
 
--- Location: IOOBUF_X0_Y10_N9
+-- Location: IOOBUF_X34_Y0_N16
 \led3[5]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -974,7 +968,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led3[5]~output_o\);
 
--- Location: IOOBUF_X49_Y54_N23
+-- Location: IOOBUF_X54_Y54_N9
 \led3[6]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -986,7 +980,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led3[6]~output_o\);
 
--- Location: IOOBUF_X24_Y39_N23
+-- Location: IOOBUF_X0_Y10_N9
 \led3_dp~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -998,7 +992,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led3_dp~output_o\);
 
--- Location: IOOBUF_X78_Y35_N2
+-- Location: IOOBUF_X78_Y16_N9
 \led4[0]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1010,7 +1004,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led4[0]~output_o\);
 
--- Location: IOOBUF_X78_Y20_N24
+-- Location: IOOBUF_X78_Y20_N2
 \led4[1]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1022,7 +1016,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led4[1]~output_o\);
 
--- Location: IOOBUF_X20_Y0_N30
+-- Location: IOOBUF_X22_Y0_N16
 \led4[2]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1034,7 +1028,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led4[2]~output_o\);
 
--- Location: IOOBUF_X60_Y0_N30
+-- Location: IOOBUF_X24_Y0_N16
 \led4[3]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1046,7 +1040,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led4[3]~output_o\);
 
--- Location: IOOBUF_X22_Y39_N30
+-- Location: IOOBUF_X78_Y25_N9
 \led4[4]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1070,7 +1064,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led4[5]~output_o\);
 
--- Location: IOOBUF_X29_Y0_N30
+-- Location: IOOBUF_X78_Y35_N16
 \led4[6]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1082,7 +1076,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led4[6]~output_o\);
 
--- Location: IOOBUF_X26_Y0_N9
+-- Location: IOOBUF_X14_Y0_N16
 \led4_dp~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1118,7 +1112,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led5[1]~output_o\);
 
--- Location: IOOBUF_X0_Y29_N9
+-- Location: IOOBUF_X54_Y54_N23
 \led5[2]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1130,7 +1124,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led5[2]~output_o\);
 
--- Location: IOOBUF_X54_Y54_N9
+-- Location: IOOBUF_X78_Y17_N2
 \led5[3]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1142,7 +1136,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led5[3]~output_o\);
 
--- Location: IOOBUF_X0_Y30_N23
+-- Location: IOOBUF_X20_Y0_N23
 \led5[4]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1154,7 +1148,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led5[4]~output_o\);
 
--- Location: IOOBUF_X56_Y0_N2
+-- Location: IOOBUF_X0_Y13_N23
 \led5[5]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1166,7 +1160,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led5[5]~output_o\);
 
--- Location: IOOBUF_X78_Y18_N16
+-- Location: IOOBUF_X60_Y54_N23
 \led5[6]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1178,7 +1172,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \led5[6]~output_o\);
 
--- Location: IOOBUF_X0_Y10_N2
+-- Location: IOOBUF_X49_Y0_N9
 \led5_dp~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1202,32 +1196,33 @@ PORT MAP (
 	i => ww_clk50MHz,
 	o => \clk50MHz~input_o\);
 
--- Location: CLKCTRL_G19
-\clk50MHz~inputclkctrl\ : fiftyfivenm_clkctrl
--- pragma translate_off
-GENERIC MAP (
-	clock_type => "global clock",
-	ena_register_mode => "none")
--- pragma translate_on
-PORT MAP (
-	inclk => \clk50MHz~inputclkctrl_INCLK_bus\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	outclk => \clk50MHz~inputclkctrl_outclk\);
-
--- Location: LCCOMB_X2_Y18_N10
-\U_CLK_DIV|counter~0\ : fiftyfivenm_lcell_comb
+-- Location: LCCOMB_X34_Y1_N6
+\U_CLK_DIV|temp_clk~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \U_CLK_DIV|counter~0_combout\ = !\U_CLK_DIV|counter~q\
+-- \U_CLK_DIV|temp_clk~0_combout\ = !\U_CLK_DIV|temp_clk~q\
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000111100001111",
+	lut_mask => "0101010101010101",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datac => \U_CLK_DIV|counter~q\,
-	combout => \U_CLK_DIV|counter~0_combout\);
+	dataa => \U_CLK_DIV|temp_clk~q\,
+	combout => \U_CLK_DIV|temp_clk~0_combout\);
+
+-- Location: LCCOMB_X34_Y1_N26
+\U_CLK_DIV|temp_clk~feeder\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_CLK_DIV|temp_clk~feeder_combout\ = \U_CLK_DIV|temp_clk~0_combout\
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010101010101010",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_CLK_DIV|temp_clk~0_combout\,
+	combout => \U_CLK_DIV|temp_clk~feeder_combout\);
 
 -- Location: IOIBUF_X46_Y54_N29
 \button_n[0]~input\ : fiftyfivenm_io_ibuf
@@ -1241,51 +1236,7 @@ PORT MAP (
 	i => ww_button_n(0),
 	o => \button_n[0]~input_o\);
 
--- Location: FF_X2_Y18_N11
-\U_CLK_DIV|counter\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clk50MHz~inputclkctrl_outclk\,
-	d => \U_CLK_DIV|counter~0_combout\,
-	clrn => \button_n[0]~input_o\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_CLK_DIV|counter~q\);
-
--- Location: LCCOMB_X2_Y18_N16
-\U_CLK_DIV|temp_clk~0\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_CLK_DIV|temp_clk~0_combout\ = \U_CLK_DIV|temp_clk~q\ $ (\U_CLK_DIV|counter~q\)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011001111001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_CLK_DIV|temp_clk~q\,
-	datad => \U_CLK_DIV|counter~q\,
-	combout => \U_CLK_DIV|temp_clk~0_combout\);
-
--- Location: LCCOMB_X2_Y18_N28
-\U_CLK_DIV|temp_clk~feeder\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_CLK_DIV|temp_clk~feeder_combout\ = \U_CLK_DIV|temp_clk~0_combout\
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datac => \U_CLK_DIV|temp_clk~0_combout\,
-	combout => \U_CLK_DIV|temp_clk~feeder_combout\);
-
--- Location: FF_X2_Y18_N29
+-- Location: FF_X34_Y1_N27
 \U_CLK_DIV|temp_clk\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1293,14 +1244,14 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \clk50MHz~inputclkctrl_outclk\,
+	clk => \clk50MHz~input_o\,
 	d => \U_CLK_DIV|temp_clk~feeder_combout\,
 	clrn => \button_n[0]~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \U_CLK_DIV|temp_clk~q\);
 
--- Location: CLKCTRL_G3
+-- Location: CLKCTRL_G18
 \U_CLK_DIV|temp_clk~clkctrl\ : fiftyfivenm_clkctrl
 -- pragma translate_off
 GENERIC MAP (
@@ -1313,724 +1264,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	outclk => \U_CLK_DIV|temp_clk~clkctrl_outclk\);
 
--- Location: LCCOMB_X1_Y14_N6
-\U_VGA|sync|Add1~0\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add1~0_combout\ = \U_VGA|sync|h_counter\(0) $ (VCC)
--- \U_VGA|sync|Add1~1\ = CARRY(\U_VGA|sync|h_counter\(0))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0101010110101010",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_VGA|sync|h_counter\(0),
-	datad => VCC,
-	combout => \U_VGA|sync|Add1~0_combout\,
-	cout => \U_VGA|sync|Add1~1\);
-
--- Location: FF_X1_Y14_N7
-\U_VGA|sync|h_counter[0]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|Add1~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|h_counter\(0));
-
--- Location: LCCOMB_X1_Y14_N8
-\U_VGA|sync|Add1~2\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add1~2_combout\ = (\U_VGA|sync|h_counter\(1) & (!\U_VGA|sync|Add1~1\)) # (!\U_VGA|sync|h_counter\(1) & ((\U_VGA|sync|Add1~1\) # (GND)))
--- \U_VGA|sync|Add1~3\ = CARRY((!\U_VGA|sync|Add1~1\) # (!\U_VGA|sync|h_counter\(1)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011110000111111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_VGA|sync|h_counter\(1),
-	datad => VCC,
-	cin => \U_VGA|sync|Add1~1\,
-	combout => \U_VGA|sync|Add1~2_combout\,
-	cout => \U_VGA|sync|Add1~3\);
-
--- Location: LCCOMB_X1_Y14_N22
-\U_VGA|sync|Add1~16\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add1~16_combout\ = (\U_VGA|sync|h_counter\(8) & (\U_VGA|sync|Add1~15\ $ (GND))) # (!\U_VGA|sync|h_counter\(8) & (!\U_VGA|sync|Add1~15\ & VCC))
--- \U_VGA|sync|Add1~17\ = CARRY((\U_VGA|sync|h_counter\(8) & !\U_VGA|sync|Add1~15\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100001100001100",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_VGA|sync|h_counter\(8),
-	datad => VCC,
-	cin => \U_VGA|sync|Add1~15\,
-	combout => \U_VGA|sync|Add1~16_combout\,
-	cout => \U_VGA|sync|Add1~17\);
-
--- Location: LCCOMB_X1_Y14_N24
-\U_VGA|sync|Add1~18\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add1~18_combout\ = \U_VGA|sync|h_counter\(9) $ (\U_VGA|sync|Add1~17\)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0101101001011010",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_VGA|sync|h_counter\(9),
-	cin => \U_VGA|sync|Add1~17\,
-	combout => \U_VGA|sync|Add1~18_combout\);
-
--- Location: LCCOMB_X1_Y14_N26
-\U_VGA|sync|h_counter~1\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|h_counter~1_combout\ = (!\U_VGA|sync|Equal0~2_combout\ & \U_VGA|sync|Add1~18_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011001100000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_VGA|sync|Equal0~2_combout\,
-	datad => \U_VGA|sync|Add1~18_combout\,
-	combout => \U_VGA|sync|h_counter~1_combout\);
-
--- Location: FF_X1_Y14_N27
-\U_VGA|sync|h_counter[9]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|h_counter~1_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|h_counter\(9));
-
--- Location: LCCOMB_X1_Y14_N30
-\U_VGA|sync|Equal0~0\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Equal0~0_combout\ = (!\U_VGA|sync|h_counter\(3) & (!\U_VGA|sync|h_counter\(7) & (\U_VGA|sync|h_counter\(8) & !\U_VGA|sync|h_counter\(2))))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0000000000010000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_VGA|sync|h_counter\(3),
-	datab => \U_VGA|sync|h_counter\(7),
-	datac => \U_VGA|sync|h_counter\(8),
-	datad => \U_VGA|sync|h_counter\(2),
-	combout => \U_VGA|sync|Equal0~0_combout\);
-
--- Location: LCCOMB_X1_Y14_N28
-\U_VGA|sync|Equal0~1\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Equal0~1_combout\ = (\U_VGA|sync|h_counter\(0) & (!\U_VGA|sync|h_counter\(1) & (!\U_VGA|sync|h_counter\(4) & \U_VGA|sync|h_counter\(5))))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0000001000000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_VGA|sync|h_counter\(0),
-	datab => \U_VGA|sync|h_counter\(1),
-	datac => \U_VGA|sync|h_counter\(4),
-	datad => \U_VGA|sync|h_counter\(5),
-	combout => \U_VGA|sync|Equal0~1_combout\);
-
--- Location: LCCOMB_X1_Y14_N2
-\U_VGA|sync|Equal0~2\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Equal0~2_combout\ = (\U_VGA|sync|h_counter\(9) & (!\U_VGA|sync|h_counter\(6) & (\U_VGA|sync|Equal0~0_combout\ & \U_VGA|sync|Equal0~1_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0010000000000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_VGA|sync|h_counter\(9),
-	datab => \U_VGA|sync|h_counter\(6),
-	datac => \U_VGA|sync|Equal0~0_combout\,
-	datad => \U_VGA|sync|Equal0~1_combout\,
-	combout => \U_VGA|sync|Equal0~2_combout\);
-
--- Location: LCCOMB_X1_Y14_N0
-\U_VGA|sync|h_counter~3\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|h_counter~3_combout\ = (\U_VGA|sync|Add1~2_combout\ & !\U_VGA|sync|Equal0~2_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0000000011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datac => \U_VGA|sync|Add1~2_combout\,
-	datad => \U_VGA|sync|Equal0~2_combout\,
-	combout => \U_VGA|sync|h_counter~3_combout\);
-
--- Location: FF_X1_Y14_N1
-\U_VGA|sync|h_counter[1]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|h_counter~3_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|h_counter\(1));
-
--- Location: LCCOMB_X1_Y14_N10
-\U_VGA|sync|Add1~4\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add1~4_combout\ = (\U_VGA|sync|h_counter\(2) & (\U_VGA|sync|Add1~3\ $ (GND))) # (!\U_VGA|sync|h_counter\(2) & (!\U_VGA|sync|Add1~3\ & VCC))
--- \U_VGA|sync|Add1~5\ = CARRY((\U_VGA|sync|h_counter\(2) & !\U_VGA|sync|Add1~3\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010010100001010",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_VGA|sync|h_counter\(2),
-	datad => VCC,
-	cin => \U_VGA|sync|Add1~3\,
-	combout => \U_VGA|sync|Add1~4_combout\,
-	cout => \U_VGA|sync|Add1~5\);
-
--- Location: FF_X1_Y14_N11
-\U_VGA|sync|h_counter[2]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|Add1~4_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|h_counter\(2));
-
--- Location: LCCOMB_X1_Y14_N12
-\U_VGA|sync|Add1~6\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add1~6_combout\ = (\U_VGA|sync|h_counter\(3) & (!\U_VGA|sync|Add1~5\)) # (!\U_VGA|sync|h_counter\(3) & ((\U_VGA|sync|Add1~5\) # (GND)))
--- \U_VGA|sync|Add1~7\ = CARRY((!\U_VGA|sync|Add1~5\) # (!\U_VGA|sync|h_counter\(3)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0101101001011111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_VGA|sync|h_counter\(3),
-	datad => VCC,
-	cin => \U_VGA|sync|Add1~5\,
-	combout => \U_VGA|sync|Add1~6_combout\,
-	cout => \U_VGA|sync|Add1~7\);
-
--- Location: FF_X1_Y14_N13
-\U_VGA|sync|h_counter[3]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|Add1~6_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|h_counter\(3));
-
--- Location: LCCOMB_X1_Y14_N14
-\U_VGA|sync|Add1~8\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add1~8_combout\ = (\U_VGA|sync|h_counter\(4) & (\U_VGA|sync|Add1~7\ $ (GND))) # (!\U_VGA|sync|h_counter\(4) & (!\U_VGA|sync|Add1~7\ & VCC))
--- \U_VGA|sync|Add1~9\ = CARRY((\U_VGA|sync|h_counter\(4) & !\U_VGA|sync|Add1~7\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100001100001100",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_VGA|sync|h_counter\(4),
-	datad => VCC,
-	cin => \U_VGA|sync|Add1~7\,
-	combout => \U_VGA|sync|Add1~8_combout\,
-	cout => \U_VGA|sync|Add1~9\);
-
--- Location: FF_X1_Y14_N15
-\U_VGA|sync|h_counter[4]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|Add1~8_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|h_counter\(4));
-
--- Location: LCCOMB_X1_Y14_N16
-\U_VGA|sync|Add1~10\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add1~10_combout\ = (\U_VGA|sync|h_counter\(5) & (!\U_VGA|sync|Add1~9\)) # (!\U_VGA|sync|h_counter\(5) & ((\U_VGA|sync|Add1~9\) # (GND)))
--- \U_VGA|sync|Add1~11\ = CARRY((!\U_VGA|sync|Add1~9\) # (!\U_VGA|sync|h_counter\(5)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011110000111111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_VGA|sync|h_counter\(5),
-	datad => VCC,
-	cin => \U_VGA|sync|Add1~9\,
-	combout => \U_VGA|sync|Add1~10_combout\,
-	cout => \U_VGA|sync|Add1~11\);
-
--- Location: LCCOMB_X2_Y14_N16
-\U_VGA|sync|h_counter~2\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|h_counter~2_combout\ = (\U_VGA|sync|Add1~10_combout\ & !\U_VGA|sync|Equal0~2_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0000000011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datac => \U_VGA|sync|Add1~10_combout\,
-	datad => \U_VGA|sync|Equal0~2_combout\,
-	combout => \U_VGA|sync|h_counter~2_combout\);
-
--- Location: FF_X2_Y14_N17
-\U_VGA|sync|h_counter[5]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|h_counter~2_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|h_counter\(5));
-
--- Location: LCCOMB_X1_Y14_N18
-\U_VGA|sync|Add1~12\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add1~12_combout\ = (\U_VGA|sync|h_counter\(6) & (\U_VGA|sync|Add1~11\ $ (GND))) # (!\U_VGA|sync|h_counter\(6) & (!\U_VGA|sync|Add1~11\ & VCC))
--- \U_VGA|sync|Add1~13\ = CARRY((\U_VGA|sync|h_counter\(6) & !\U_VGA|sync|Add1~11\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100001100001100",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_VGA|sync|h_counter\(6),
-	datad => VCC,
-	cin => \U_VGA|sync|Add1~11\,
-	combout => \U_VGA|sync|Add1~12_combout\,
-	cout => \U_VGA|sync|Add1~13\);
-
--- Location: FF_X1_Y14_N19
-\U_VGA|sync|h_counter[6]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|Add1~12_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|h_counter\(6));
-
--- Location: LCCOMB_X1_Y14_N20
-\U_VGA|sync|Add1~14\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add1~14_combout\ = (\U_VGA|sync|h_counter\(7) & (!\U_VGA|sync|Add1~13\)) # (!\U_VGA|sync|h_counter\(7) & ((\U_VGA|sync|Add1~13\) # (GND)))
--- \U_VGA|sync|Add1~15\ = CARRY((!\U_VGA|sync|Add1~13\) # (!\U_VGA|sync|h_counter\(7)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011110000111111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_VGA|sync|h_counter\(7),
-	datad => VCC,
-	cin => \U_VGA|sync|Add1~13\,
-	combout => \U_VGA|sync|Add1~14_combout\,
-	cout => \U_VGA|sync|Add1~15\);
-
--- Location: FF_X1_Y14_N21
-\U_VGA|sync|h_counter[7]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|Add1~14_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|h_counter\(7));
-
--- Location: LCCOMB_X1_Y14_N4
-\U_VGA|sync|h_counter~0\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|h_counter~0_combout\ = (\U_VGA|sync|Add1~16_combout\ & !\U_VGA|sync|Equal0~2_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0000000011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datac => \U_VGA|sync|Add1~16_combout\,
-	datad => \U_VGA|sync|Equal0~2_combout\,
-	combout => \U_VGA|sync|h_counter~0_combout\);
-
--- Location: FF_X1_Y14_N5
-\U_VGA|sync|h_counter[8]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|h_counter~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|h_counter\(8));
-
--- Location: LCCOMB_X3_Y14_N0
-\U_VGA|sync|Add0~0\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add0~0_combout\ = \U_VGA|sync|v_counter\(0) $ (VCC)
--- \U_VGA|sync|Add0~1\ = CARRY(\U_VGA|sync|v_counter\(0))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0101010110101010",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_VGA|sync|v_counter\(0),
-	datad => VCC,
-	combout => \U_VGA|sync|Add0~0_combout\,
-	cout => \U_VGA|sync|Add0~1\);
-
--- Location: LCCOMB_X2_Y14_N14
-\U_VGA|sync|v_counter~3\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|v_counter~3_combout\ = (\U_VGA|sync|Add0~0_combout\ & !\U_VGA|sync|Equal1~2_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0000000011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datac => \U_VGA|sync|Add0~0_combout\,
-	datad => \U_VGA|sync|Equal1~2_combout\,
-	combout => \U_VGA|sync|v_counter~3_combout\);
-
--- Location: FF_X2_Y14_N15
-\U_VGA|sync|v_counter[0]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|v_counter~3_combout\,
-	ena => \U_VGA|sync|Equal0~2_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|v_counter\(0));
-
--- Location: LCCOMB_X3_Y14_N2
-\U_VGA|sync|Add0~2\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add0~2_combout\ = (\U_VGA|sync|v_counter\(1) & (!\U_VGA|sync|Add0~1\)) # (!\U_VGA|sync|v_counter\(1) & ((\U_VGA|sync|Add0~1\) # (GND)))
--- \U_VGA|sync|Add0~3\ = CARRY((!\U_VGA|sync|Add0~1\) # (!\U_VGA|sync|v_counter\(1)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011110000111111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_VGA|sync|v_counter\(1),
-	datad => VCC,
-	cin => \U_VGA|sync|Add0~1\,
-	combout => \U_VGA|sync|Add0~2_combout\,
-	cout => \U_VGA|sync|Add0~3\);
-
--- Location: LCCOMB_X3_Y14_N20
-\U_VGA|sync|v_counter~2\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|v_counter~2_combout\ = (!\U_VGA|sync|Equal1~2_combout\ & \U_VGA|sync|Add0~2_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0000111100000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datac => \U_VGA|sync|Equal1~2_combout\,
-	datad => \U_VGA|sync|Add0~2_combout\,
-	combout => \U_VGA|sync|v_counter~2_combout\);
-
--- Location: FF_X3_Y14_N21
-\U_VGA|sync|v_counter[1]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|v_counter~2_combout\,
-	ena => \U_VGA|sync|Equal0~2_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|v_counter\(1));
-
--- Location: LCCOMB_X3_Y14_N4
-\U_VGA|sync|Add0~4\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add0~4_combout\ = (\U_VGA|sync|v_counter\(2) & (\U_VGA|sync|Add0~3\ $ (GND))) # (!\U_VGA|sync|v_counter\(2) & (!\U_VGA|sync|Add0~3\ & VCC))
--- \U_VGA|sync|Add0~5\ = CARRY((\U_VGA|sync|v_counter\(2) & !\U_VGA|sync|Add0~3\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100001100001100",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_VGA|sync|v_counter\(2),
-	datad => VCC,
-	cin => \U_VGA|sync|Add0~3\,
-	combout => \U_VGA|sync|Add0~4_combout\,
-	cout => \U_VGA|sync|Add0~5\);
-
--- Location: LCCOMB_X3_Y14_N24
-\U_VGA|sync|v_counter~0\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|v_counter~0_combout\ = (!\U_VGA|sync|Equal1~2_combout\ & \U_VGA|sync|Add0~4_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0101000001010000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_VGA|sync|Equal1~2_combout\,
-	datac => \U_VGA|sync|Add0~4_combout\,
-	combout => \U_VGA|sync|v_counter~0_combout\);
-
--- Location: FF_X3_Y14_N25
-\U_VGA|sync|v_counter[2]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|v_counter~0_combout\,
-	ena => \U_VGA|sync|Equal0~2_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|v_counter\(2));
-
--- Location: LCCOMB_X3_Y14_N6
-\U_VGA|sync|Add0~6\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add0~6_combout\ = (\U_VGA|sync|v_counter\(3) & (!\U_VGA|sync|Add0~5\)) # (!\U_VGA|sync|v_counter\(3) & ((\U_VGA|sync|Add0~5\) # (GND)))
--- \U_VGA|sync|Add0~7\ = CARRY((!\U_VGA|sync|Add0~5\) # (!\U_VGA|sync|v_counter\(3)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0101101001011111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_VGA|sync|v_counter\(3),
-	datad => VCC,
-	cin => \U_VGA|sync|Add0~5\,
-	combout => \U_VGA|sync|Add0~6_combout\,
-	cout => \U_VGA|sync|Add0~7\);
-
--- Location: LCCOMB_X3_Y14_N30
-\U_VGA|sync|v_counter~1\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|v_counter~1_combout\ = (!\U_VGA|sync|Equal1~2_combout\ & \U_VGA|sync|Add0~6_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0000111100000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datac => \U_VGA|sync|Equal1~2_combout\,
-	datad => \U_VGA|sync|Add0~6_combout\,
-	combout => \U_VGA|sync|v_counter~1_combout\);
-
--- Location: FF_X3_Y14_N31
-\U_VGA|sync|v_counter[3]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|v_counter~1_combout\,
-	ena => \U_VGA|sync|Equal0~2_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|v_counter\(3));
-
--- Location: LCCOMB_X3_Y14_N8
-\U_VGA|sync|Add0~8\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add0~8_combout\ = (\U_VGA|sync|v_counter\(4) & (\U_VGA|sync|Add0~7\ $ (GND))) # (!\U_VGA|sync|v_counter\(4) & (!\U_VGA|sync|Add0~7\ & VCC))
--- \U_VGA|sync|Add0~9\ = CARRY((\U_VGA|sync|v_counter\(4) & !\U_VGA|sync|Add0~7\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100001100001100",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_VGA|sync|v_counter\(4),
-	datad => VCC,
-	cin => \U_VGA|sync|Add0~7\,
-	combout => \U_VGA|sync|Add0~8_combout\,
-	cout => \U_VGA|sync|Add0~9\);
-
--- Location: FF_X3_Y14_N9
-\U_VGA|sync|v_counter[4]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|Add0~8_combout\,
-	ena => \U_VGA|sync|Equal0~2_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|v_counter\(4));
-
--- Location: LCCOMB_X3_Y14_N10
-\U_VGA|sync|Add0~10\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add0~10_combout\ = (\U_VGA|sync|v_counter\(5) & (!\U_VGA|sync|Add0~9\)) # (!\U_VGA|sync|v_counter\(5) & ((\U_VGA|sync|Add0~9\) # (GND)))
--- \U_VGA|sync|Add0~11\ = CARRY((!\U_VGA|sync|Add0~9\) # (!\U_VGA|sync|v_counter\(5)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0101101001011111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_VGA|sync|v_counter\(5),
-	datad => VCC,
-	cin => \U_VGA|sync|Add0~9\,
-	combout => \U_VGA|sync|Add0~10_combout\,
-	cout => \U_VGA|sync|Add0~11\);
-
--- Location: FF_X3_Y14_N11
-\U_VGA|sync|v_counter[5]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|Add0~10_combout\,
-	ena => \U_VGA|sync|Equal0~2_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|v_counter\(5));
-
--- Location: LCCOMB_X3_Y14_N12
-\U_VGA|sync|Add0~12\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|sync|Add0~12_combout\ = (\U_VGA|sync|v_counter\(6) & (\U_VGA|sync|Add0~11\ $ (GND))) # (!\U_VGA|sync|v_counter\(6) & (!\U_VGA|sync|Add0~11\ & VCC))
--- \U_VGA|sync|Add0~13\ = CARRY((\U_VGA|sync|v_counter\(6) & !\U_VGA|sync|Add0~11\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010010100001010",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_VGA|sync|v_counter\(6),
-	datad => VCC,
-	cin => \U_VGA|sync|Add0~11\,
-	combout => \U_VGA|sync|Add0~12_combout\,
-	cout => \U_VGA|sync|Add0~13\);
-
--- Location: FF_X3_Y14_N13
-\U_VGA|sync|v_counter[6]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|Add0~12_combout\,
-	ena => \U_VGA|sync|Equal0~2_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|v_counter\(6));
-
--- Location: LCCOMB_X3_Y14_N14
+-- Location: LCCOMB_X35_Y1_N20
 \U_VGA|sync|Add0~14\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U_VGA|sync|Add0~14_combout\ = (\U_VGA|sync|v_counter\(7) & (!\U_VGA|sync|Add0~13\)) # (!\U_VGA|sync|v_counter\(7) & ((\U_VGA|sync|Add0~13\) # (GND)))
@@ -2048,22 +1282,7 @@ PORT MAP (
 	combout => \U_VGA|sync|Add0~14_combout\,
 	cout => \U_VGA|sync|Add0~15\);
 
--- Location: FF_X3_Y14_N15
-\U_VGA|sync|v_counter[7]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|Add0~14_combout\,
-	ena => \U_VGA|sync|Equal0~2_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \U_VGA|sync|v_counter\(7));
-
--- Location: LCCOMB_X3_Y14_N16
+-- Location: LCCOMB_X35_Y1_N22
 \U_VGA|sync|Add0~16\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U_VGA|sync|Add0~16_combout\ = (\U_VGA|sync|v_counter\(8) & (\U_VGA|sync|Add0~15\ $ (GND))) # (!\U_VGA|sync|v_counter\(8) & (!\U_VGA|sync|Add0~15\ & VCC))
@@ -2071,17 +1290,444 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100001100001100",
+	lut_mask => "1010010100001010",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_VGA|sync|v_counter\(8),
+	dataa => \U_VGA|sync|v_counter\(8),
 	datad => VCC,
 	cin => \U_VGA|sync|Add0~15\,
 	combout => \U_VGA|sync|Add0~16_combout\,
 	cout => \U_VGA|sync|Add0~17\);
 
--- Location: FF_X3_Y14_N17
+-- Location: LCCOMB_X37_Y1_N10
+\U_VGA|sync|Add1~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Add1~0_combout\ = \U_VGA|sync|h_counter\(0) $ (VCC)
+-- \U_VGA|sync|Add1~1\ = CARRY(\U_VGA|sync|h_counter\(0))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101010110101010",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_VGA|sync|h_counter\(0),
+	datad => VCC,
+	combout => \U_VGA|sync|Add1~0_combout\,
+	cout => \U_VGA|sync|Add1~1\);
+
+-- Location: FF_X37_Y1_N11
+\U_VGA|sync|h_counter[0]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|Add1~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|h_counter\(0));
+
+-- Location: LCCOMB_X37_Y1_N12
+\U_VGA|sync|Add1~2\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Add1~2_combout\ = (\U_VGA|sync|h_counter\(1) & (!\U_VGA|sync|Add1~1\)) # (!\U_VGA|sync|h_counter\(1) & ((\U_VGA|sync|Add1~1\) # (GND)))
+-- \U_VGA|sync|Add1~3\ = CARRY((!\U_VGA|sync|Add1~1\) # (!\U_VGA|sync|h_counter\(1)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011110000111111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_VGA|sync|h_counter\(1),
+	datad => VCC,
+	cin => \U_VGA|sync|Add1~1\,
+	combout => \U_VGA|sync|Add1~2_combout\,
+	cout => \U_VGA|sync|Add1~3\);
+
+-- Location: LCCOMB_X36_Y1_N6
+\U_VGA|sync|h_counter~3\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|h_counter~3_combout\ = (\U_VGA|sync|Add1~2_combout\ & !\U_VGA|sync|Equal0~2_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000000011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datac => \U_VGA|sync|Add1~2_combout\,
+	datad => \U_VGA|sync|Equal0~2_combout\,
+	combout => \U_VGA|sync|h_counter~3_combout\);
+
+-- Location: FF_X36_Y1_N7
+\U_VGA|sync|h_counter[1]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|h_counter~3_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|h_counter\(1));
+
+-- Location: LCCOMB_X37_Y1_N14
+\U_VGA|sync|Add1~4\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Add1~4_combout\ = (\U_VGA|sync|h_counter\(2) & (\U_VGA|sync|Add1~3\ $ (GND))) # (!\U_VGA|sync|h_counter\(2) & (!\U_VGA|sync|Add1~3\ & VCC))
+-- \U_VGA|sync|Add1~5\ = CARRY((\U_VGA|sync|h_counter\(2) & !\U_VGA|sync|Add1~3\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100001100001100",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_VGA|sync|h_counter\(2),
+	datad => VCC,
+	cin => \U_VGA|sync|Add1~3\,
+	combout => \U_VGA|sync|Add1~4_combout\,
+	cout => \U_VGA|sync|Add1~5\);
+
+-- Location: FF_X37_Y1_N15
+\U_VGA|sync|h_counter[2]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|Add1~4_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|h_counter\(2));
+
+-- Location: LCCOMB_X37_Y1_N16
+\U_VGA|sync|Add1~6\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Add1~6_combout\ = (\U_VGA|sync|h_counter\(3) & (!\U_VGA|sync|Add1~5\)) # (!\U_VGA|sync|h_counter\(3) & ((\U_VGA|sync|Add1~5\) # (GND)))
+-- \U_VGA|sync|Add1~7\ = CARRY((!\U_VGA|sync|Add1~5\) # (!\U_VGA|sync|h_counter\(3)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011110000111111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_VGA|sync|h_counter\(3),
+	datad => VCC,
+	cin => \U_VGA|sync|Add1~5\,
+	combout => \U_VGA|sync|Add1~6_combout\,
+	cout => \U_VGA|sync|Add1~7\);
+
+-- Location: FF_X37_Y1_N17
+\U_VGA|sync|h_counter[3]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|Add1~6_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|h_counter\(3));
+
+-- Location: LCCOMB_X37_Y1_N18
+\U_VGA|sync|Add1~8\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Add1~8_combout\ = (\U_VGA|sync|h_counter\(4) & (\U_VGA|sync|Add1~7\ $ (GND))) # (!\U_VGA|sync|h_counter\(4) & (!\U_VGA|sync|Add1~7\ & VCC))
+-- \U_VGA|sync|Add1~9\ = CARRY((\U_VGA|sync|h_counter\(4) & !\U_VGA|sync|Add1~7\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100001100001100",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_VGA|sync|h_counter\(4),
+	datad => VCC,
+	cin => \U_VGA|sync|Add1~7\,
+	combout => \U_VGA|sync|Add1~8_combout\,
+	cout => \U_VGA|sync|Add1~9\);
+
+-- Location: FF_X37_Y1_N19
+\U_VGA|sync|h_counter[4]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|Add1~8_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|h_counter\(4));
+
+-- Location: LCCOMB_X37_Y1_N20
+\U_VGA|sync|Add1~10\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Add1~10_combout\ = (\U_VGA|sync|h_counter\(5) & (!\U_VGA|sync|Add1~9\)) # (!\U_VGA|sync|h_counter\(5) & ((\U_VGA|sync|Add1~9\) # (GND)))
+-- \U_VGA|sync|Add1~11\ = CARRY((!\U_VGA|sync|Add1~9\) # (!\U_VGA|sync|h_counter\(5)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101101001011111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_VGA|sync|h_counter\(5),
+	datad => VCC,
+	cin => \U_VGA|sync|Add1~9\,
+	combout => \U_VGA|sync|Add1~10_combout\,
+	cout => \U_VGA|sync|Add1~11\);
+
+-- Location: LCCOMB_X36_Y1_N16
+\U_VGA|sync|h_counter~2\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|h_counter~2_combout\ = (\U_VGA|sync|Add1~10_combout\ & !\U_VGA|sync|Equal0~2_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000000011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datac => \U_VGA|sync|Add1~10_combout\,
+	datad => \U_VGA|sync|Equal0~2_combout\,
+	combout => \U_VGA|sync|h_counter~2_combout\);
+
+-- Location: FF_X36_Y1_N17
+\U_VGA|sync|h_counter[5]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|h_counter~2_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|h_counter\(5));
+
+-- Location: LCCOMB_X37_Y1_N22
+\U_VGA|sync|Add1~12\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Add1~12_combout\ = (\U_VGA|sync|h_counter\(6) & (\U_VGA|sync|Add1~11\ $ (GND))) # (!\U_VGA|sync|h_counter\(6) & (!\U_VGA|sync|Add1~11\ & VCC))
+-- \U_VGA|sync|Add1~13\ = CARRY((\U_VGA|sync|h_counter\(6) & !\U_VGA|sync|Add1~11\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010010100001010",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_VGA|sync|h_counter\(6),
+	datad => VCC,
+	cin => \U_VGA|sync|Add1~11\,
+	combout => \U_VGA|sync|Add1~12_combout\,
+	cout => \U_VGA|sync|Add1~13\);
+
+-- Location: FF_X37_Y1_N23
+\U_VGA|sync|h_counter[6]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|Add1~12_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|h_counter\(6));
+
+-- Location: LCCOMB_X37_Y1_N24
+\U_VGA|sync|Add1~14\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Add1~14_combout\ = (\U_VGA|sync|h_counter\(7) & (!\U_VGA|sync|Add1~13\)) # (!\U_VGA|sync|h_counter\(7) & ((\U_VGA|sync|Add1~13\) # (GND)))
+-- \U_VGA|sync|Add1~15\ = CARRY((!\U_VGA|sync|Add1~13\) # (!\U_VGA|sync|h_counter\(7)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011110000111111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_VGA|sync|h_counter\(7),
+	datad => VCC,
+	cin => \U_VGA|sync|Add1~13\,
+	combout => \U_VGA|sync|Add1~14_combout\,
+	cout => \U_VGA|sync|Add1~15\);
+
+-- Location: FF_X37_Y1_N25
+\U_VGA|sync|h_counter[7]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|Add1~14_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|h_counter\(7));
+
+-- Location: LCCOMB_X37_Y1_N26
+\U_VGA|sync|Add1~16\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Add1~16_combout\ = (\U_VGA|sync|h_counter\(8) & (\U_VGA|sync|Add1~15\ $ (GND))) # (!\U_VGA|sync|h_counter\(8) & (!\U_VGA|sync|Add1~15\ & VCC))
+-- \U_VGA|sync|Add1~17\ = CARRY((\U_VGA|sync|h_counter\(8) & !\U_VGA|sync|Add1~15\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100001100001100",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_VGA|sync|h_counter\(8),
+	datad => VCC,
+	cin => \U_VGA|sync|Add1~15\,
+	combout => \U_VGA|sync|Add1~16_combout\,
+	cout => \U_VGA|sync|Add1~17\);
+
+-- Location: LCCOMB_X37_Y1_N0
+\U_VGA|sync|h_counter~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|h_counter~0_combout\ = (\U_VGA|sync|Add1~16_combout\ & !\U_VGA|sync|Equal0~2_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000000011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datac => \U_VGA|sync|Add1~16_combout\,
+	datad => \U_VGA|sync|Equal0~2_combout\,
+	combout => \U_VGA|sync|h_counter~0_combout\);
+
+-- Location: FF_X37_Y1_N1
+\U_VGA|sync|h_counter[8]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|h_counter~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|h_counter\(8));
+
+-- Location: LCCOMB_X37_Y1_N28
+\U_VGA|sync|Add1~18\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Add1~18_combout\ = \U_VGA|sync|Add1~17\ $ (\U_VGA|sync|h_counter\(9))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000111111110000",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datad => \U_VGA|sync|h_counter\(9),
+	cin => \U_VGA|sync|Add1~17\,
+	combout => \U_VGA|sync|Add1~18_combout\);
+
+-- Location: LCCOMB_X37_Y1_N2
+\U_VGA|sync|h_counter~1\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|h_counter~1_combout\ = (\U_VGA|sync|Add1~18_combout\ & !\U_VGA|sync|Equal0~2_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000000011001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_VGA|sync|Add1~18_combout\,
+	datad => \U_VGA|sync|Equal0~2_combout\,
+	combout => \U_VGA|sync|h_counter~1_combout\);
+
+-- Location: FF_X37_Y1_N3
+\U_VGA|sync|h_counter[9]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|h_counter~1_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|h_counter\(9));
+
+-- Location: LCCOMB_X36_Y1_N8
+\U_VGA|sync|Equal0~1\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Equal0~1_combout\ = (!\U_VGA|sync|h_counter\(1) & (\U_VGA|sync|h_counter\(5) & (\U_VGA|sync|h_counter\(0) & !\U_VGA|sync|h_counter\(4))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000000001000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_VGA|sync|h_counter\(1),
+	datab => \U_VGA|sync|h_counter\(5),
+	datac => \U_VGA|sync|h_counter\(0),
+	datad => \U_VGA|sync|h_counter\(4),
+	combout => \U_VGA|sync|Equal0~1_combout\);
+
+-- Location: LCCOMB_X37_Y1_N6
+\U_VGA|sync|Equal0~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Equal0~0_combout\ = (!\U_VGA|sync|h_counter\(3) & (!\U_VGA|sync|h_counter\(7) & (!\U_VGA|sync|h_counter\(2) & \U_VGA|sync|h_counter\(8))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000000100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_VGA|sync|h_counter\(3),
+	datab => \U_VGA|sync|h_counter\(7),
+	datac => \U_VGA|sync|h_counter\(2),
+	datad => \U_VGA|sync|h_counter\(8),
+	combout => \U_VGA|sync|Equal0~0_combout\);
+
+-- Location: LCCOMB_X36_Y1_N18
+\U_VGA|sync|Equal0~2\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Equal0~2_combout\ = (\U_VGA|sync|h_counter\(9) & (!\U_VGA|sync|h_counter\(6) & (\U_VGA|sync|Equal0~1_combout\ & \U_VGA|sync|Equal0~0_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0010000000000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_VGA|sync|h_counter\(9),
+	datab => \U_VGA|sync|h_counter\(6),
+	datac => \U_VGA|sync|Equal0~1_combout\,
+	datad => \U_VGA|sync|Equal0~0_combout\,
+	combout => \U_VGA|sync|Equal0~2_combout\);
+
+-- Location: FF_X35_Y1_N23
 \U_VGA|sync|v_counter[8]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2096,10 +1742,102 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U_VGA|sync|v_counter\(8));
 
--- Location: LCCOMB_X3_Y14_N28
+-- Location: LCCOMB_X35_Y1_N24
+\U_VGA|sync|Add0~18\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Add0~18_combout\ = \U_VGA|sync|v_counter\(9) $ (\U_VGA|sync|Add0~17\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101101001011010",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_VGA|sync|v_counter\(9),
+	cin => \U_VGA|sync|Add0~17\,
+	combout => \U_VGA|sync|Add0~18_combout\);
+
+-- Location: LCCOMB_X35_Y1_N26
+\U_VGA|sync|v_counter~4\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|v_counter~4_combout\ = (!\U_VGA|sync|Equal1~2_combout\ & \U_VGA|sync|Add0~18_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datac => \U_VGA|sync|Equal1~2_combout\,
+	datad => \U_VGA|sync|Add0~18_combout\,
+	combout => \U_VGA|sync|v_counter~4_combout\);
+
+-- Location: FF_X35_Y1_N27
+\U_VGA|sync|v_counter[9]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|v_counter~4_combout\,
+	ena => \U_VGA|sync|Equal0~2_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|v_counter\(9));
+
+-- Location: LCCOMB_X35_Y1_N6
+\U_VGA|sync|Add0~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Add0~0_combout\ = \U_VGA|sync|v_counter\(0) $ (VCC)
+-- \U_VGA|sync|Add0~1\ = CARRY(\U_VGA|sync|v_counter\(0))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101010110101010",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_VGA|sync|v_counter\(0),
+	datad => VCC,
+	combout => \U_VGA|sync|Add0~0_combout\,
+	cout => \U_VGA|sync|Add0~1\);
+
+-- Location: LCCOMB_X36_Y1_N2
+\U_VGA|sync|v_counter~3\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|v_counter~3_combout\ = (\U_VGA|sync|Add0~0_combout\ & !\U_VGA|sync|Equal1~2_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000000011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datac => \U_VGA|sync|Add0~0_combout\,
+	datad => \U_VGA|sync|Equal1~2_combout\,
+	combout => \U_VGA|sync|v_counter~3_combout\);
+
+-- Location: FF_X36_Y1_N3
+\U_VGA|sync|v_counter[0]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|v_counter~3_combout\,
+	ena => \U_VGA|sync|Equal0~2_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|v_counter\(0));
+
+-- Location: LCCOMB_X35_Y1_N4
 \U_VGA|sync|Equal1~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \U_VGA|sync|Equal1~1_combout\ = (!\U_VGA|sync|v_counter\(5) & (!\U_VGA|sync|v_counter\(7) & (!\U_VGA|sync|v_counter\(6) & !\U_VGA|sync|v_counter\(0))))
+-- \U_VGA|sync|Equal1~1_combout\ = (!\U_VGA|sync|v_counter\(0) & (!\U_VGA|sync|v_counter\(5) & (!\U_VGA|sync|v_counter\(7) & !\U_VGA|sync|v_counter\(6))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2107,16 +1845,112 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_VGA|sync|v_counter\(5),
-	datab => \U_VGA|sync|v_counter\(7),
-	datac => \U_VGA|sync|v_counter\(6),
-	datad => \U_VGA|sync|v_counter\(0),
+	dataa => \U_VGA|sync|v_counter\(0),
+	datab => \U_VGA|sync|v_counter\(5),
+	datac => \U_VGA|sync|v_counter\(7),
+	datad => \U_VGA|sync|v_counter\(6),
 	combout => \U_VGA|sync|Equal1~1_combout\);
 
--- Location: LCCOMB_X2_Y14_N24
+-- Location: LCCOMB_X35_Y1_N8
+\U_VGA|sync|Add0~2\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Add0~2_combout\ = (\U_VGA|sync|v_counter\(1) & (!\U_VGA|sync|Add0~1\)) # (!\U_VGA|sync|v_counter\(1) & ((\U_VGA|sync|Add0~1\) # (GND)))
+-- \U_VGA|sync|Add0~3\ = CARRY((!\U_VGA|sync|Add0~1\) # (!\U_VGA|sync|v_counter\(1)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011110000111111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_VGA|sync|v_counter\(1),
+	datad => VCC,
+	cin => \U_VGA|sync|Add0~1\,
+	combout => \U_VGA|sync|Add0~2_combout\,
+	cout => \U_VGA|sync|Add0~3\);
+
+-- Location: LCCOMB_X35_Y1_N28
+\U_VGA|sync|v_counter~2\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|v_counter~2_combout\ = (!\U_VGA|sync|Equal1~2_combout\ & \U_VGA|sync|Add0~2_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101000001010000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_VGA|sync|Equal1~2_combout\,
+	datac => \U_VGA|sync|Add0~2_combout\,
+	combout => \U_VGA|sync|v_counter~2_combout\);
+
+-- Location: FF_X35_Y1_N29
+\U_VGA|sync|v_counter[1]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|v_counter~2_combout\,
+	ena => \U_VGA|sync|Equal0~2_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|v_counter\(1));
+
+-- Location: LCCOMB_X35_Y1_N10
+\U_VGA|sync|Add0~4\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Add0~4_combout\ = (\U_VGA|sync|v_counter\(2) & (\U_VGA|sync|Add0~3\ $ (GND))) # (!\U_VGA|sync|v_counter\(2) & (!\U_VGA|sync|Add0~3\ & VCC))
+-- \U_VGA|sync|Add0~5\ = CARRY((\U_VGA|sync|v_counter\(2) & !\U_VGA|sync|Add0~3\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100001100001100",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_VGA|sync|v_counter\(2),
+	datad => VCC,
+	cin => \U_VGA|sync|Add0~3\,
+	combout => \U_VGA|sync|Add0~4_combout\,
+	cout => \U_VGA|sync|Add0~5\);
+
+-- Location: LCCOMB_X35_Y1_N0
+\U_VGA|sync|v_counter~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|v_counter~0_combout\ = (!\U_VGA|sync|Equal1~2_combout\ & \U_VGA|sync|Add0~4_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datac => \U_VGA|sync|Equal1~2_combout\,
+	datad => \U_VGA|sync|Add0~4_combout\,
+	combout => \U_VGA|sync|v_counter~0_combout\);
+
+-- Location: FF_X35_Y1_N1
+\U_VGA|sync|v_counter[2]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|v_counter~0_combout\,
+	ena => \U_VGA|sync|Equal0~2_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|v_counter\(2));
+
+-- Location: LCCOMB_X34_Y1_N28
 \U_VGA|sync|Equal1~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \U_VGA|sync|Equal1~0_combout\ = (\U_VGA|sync|v_counter\(3) & (!\U_VGA|sync|v_counter\(4) & (\U_VGA|sync|v_counter\(1) & \U_VGA|sync|v_counter\(2))))
+-- \U_VGA|sync|Equal1~0_combout\ = (\U_VGA|sync|v_counter\(3) & (!\U_VGA|sync|v_counter\(4) & (\U_VGA|sync|v_counter\(2) & \U_VGA|sync|v_counter\(1))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2126,11 +1960,11 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \U_VGA|sync|v_counter\(3),
 	datab => \U_VGA|sync|v_counter\(4),
-	datac => \U_VGA|sync|v_counter\(1),
-	datad => \U_VGA|sync|v_counter\(2),
+	datac => \U_VGA|sync|v_counter\(2),
+	datad => \U_VGA|sync|v_counter\(1),
 	combout => \U_VGA|sync|Equal1~0_combout\);
 
--- Location: LCCOMB_X3_Y14_N22
+-- Location: LCCOMB_X35_Y1_N30
 \U_VGA|sync|Equal1~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U_VGA|sync|Equal1~2_combout\ = (\U_VGA|sync|v_counter\(9) & (!\U_VGA|sync|v_counter\(8) & (\U_VGA|sync|Equal1~1_combout\ & \U_VGA|sync|Equal1~0_combout\)))
@@ -2147,25 +1981,28 @@ PORT MAP (
 	datad => \U_VGA|sync|Equal1~0_combout\,
 	combout => \U_VGA|sync|Equal1~2_combout\);
 
--- Location: LCCOMB_X3_Y14_N18
-\U_VGA|sync|Add0~18\ : fiftyfivenm_lcell_comb
+-- Location: LCCOMB_X35_Y1_N12
+\U_VGA|sync|Add0~6\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \U_VGA|sync|Add0~18_combout\ = \U_VGA|sync|v_counter\(9) $ (\U_VGA|sync|Add0~17\)
+-- \U_VGA|sync|Add0~6_combout\ = (\U_VGA|sync|v_counter\(3) & (!\U_VGA|sync|Add0~5\)) # (!\U_VGA|sync|v_counter\(3) & ((\U_VGA|sync|Add0~5\) # (GND)))
+-- \U_VGA|sync|Add0~7\ = CARRY((!\U_VGA|sync|Add0~5\) # (!\U_VGA|sync|v_counter\(3)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0101101001011010",
+	lut_mask => "0011110000111111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_VGA|sync|v_counter\(9),
-	cin => \U_VGA|sync|Add0~17\,
-	combout => \U_VGA|sync|Add0~18_combout\);
+	datab => \U_VGA|sync|v_counter\(3),
+	datad => VCC,
+	cin => \U_VGA|sync|Add0~5\,
+	combout => \U_VGA|sync|Add0~6_combout\,
+	cout => \U_VGA|sync|Add0~7\);
 
--- Location: LCCOMB_X3_Y14_N26
-\U_VGA|sync|v_counter~4\ : fiftyfivenm_lcell_comb
+-- Location: LCCOMB_X35_Y1_N2
+\U_VGA|sync|v_counter~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \U_VGA|sync|v_counter~4_combout\ = (!\U_VGA|sync|Equal1~2_combout\ & \U_VGA|sync|Add0~18_combout\)
+-- \U_VGA|sync|v_counter~1_combout\ = (!\U_VGA|sync|Equal1~2_combout\ & \U_VGA|sync|Add0~6_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2174,11 +2011,11 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	datac => \U_VGA|sync|Equal1~2_combout\,
-	datad => \U_VGA|sync|Add0~18_combout\,
-	combout => \U_VGA|sync|v_counter~4_combout\);
+	datad => \U_VGA|sync|Add0~6_combout\,
+	combout => \U_VGA|sync|v_counter~1_combout\);
 
--- Location: FF_X3_Y14_N27
-\U_VGA|sync|v_counter[9]\ : dffeas
+-- Location: FF_X35_Y1_N3
+\U_VGA|sync|v_counter[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -2186,63 +2023,177 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
-	d => \U_VGA|sync|v_counter~4_combout\,
+	d => \U_VGA|sync|v_counter~1_combout\,
 	ena => \U_VGA|sync|Equal0~2_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \U_VGA|sync|v_counter\(9));
+	q => \U_VGA|sync|v_counter\(3));
 
--- Location: LCCOMB_X2_Y18_N22
-\U_VGA|draw~0\ : fiftyfivenm_lcell_comb
+-- Location: LCCOMB_X35_Y1_N14
+\U_VGA|sync|Add0~8\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \U_VGA|draw~0_combout\ = (\U_VGA|sync|h_counter\(8) & (!\U_VGA|sync|v_counter\(9) & (!\U_VGA|sync|h_counter\(9) & !\U_VGA|sync|h_counter\(7))))
+-- \U_VGA|sync|Add0~8_combout\ = (\U_VGA|sync|v_counter\(4) & (\U_VGA|sync|Add0~7\ $ (GND))) # (!\U_VGA|sync|v_counter\(4) & (!\U_VGA|sync|Add0~7\ & VCC))
+-- \U_VGA|sync|Add0~9\ = CARRY((\U_VGA|sync|v_counter\(4) & !\U_VGA|sync|Add0~7\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000000000000010",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_VGA|sync|h_counter\(8),
-	datab => \U_VGA|sync|v_counter\(9),
-	datac => \U_VGA|sync|h_counter\(9),
-	datad => \U_VGA|sync|h_counter\(7),
-	combout => \U_VGA|draw~0_combout\);
-
--- Location: LCCOMB_X2_Y14_N18
-\U_VGA|draw~1\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U_VGA|draw~1_combout\ = (\U_VGA|sync|v_counter\(6)) # ((\U_VGA|sync|v_counter\(4) & \U_VGA|sync|v_counter\(5)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111110011110000",
-	sum_lutc_input => "datac")
+	lut_mask => "1100001100001100",
+	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
 	datab => \U_VGA|sync|v_counter\(4),
-	datac => \U_VGA|sync|v_counter\(6),
-	datad => \U_VGA|sync|v_counter\(5),
-	combout => \U_VGA|draw~1_combout\);
+	datad => VCC,
+	cin => \U_VGA|sync|Add0~7\,
+	combout => \U_VGA|sync|Add0~8_combout\,
+	cout => \U_VGA|sync|Add0~9\);
 
--- Location: LCCOMB_X2_Y18_N12
-\U_VGA|draw~2\ : fiftyfivenm_lcell_comb
+-- Location: FF_X35_Y1_N15
+\U_VGA|sync|v_counter[4]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|Add0~8_combout\,
+	ena => \U_VGA|sync|Equal0~2_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|v_counter\(4));
+
+-- Location: LCCOMB_X35_Y1_N16
+\U_VGA|sync|Add0~10\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \U_VGA|draw~2_combout\ = (\U_VGA|draw~0_combout\ & ((\U_VGA|sync|v_counter\(8) & (!\U_VGA|sync|v_counter\(7) & !\U_VGA|draw~1_combout\)) # (!\U_VGA|sync|v_counter\(8) & (\U_VGA|sync|v_counter\(7) & \U_VGA|draw~1_combout\))))
+-- \U_VGA|sync|Add0~10_combout\ = (\U_VGA|sync|v_counter\(5) & (!\U_VGA|sync|Add0~9\)) # (!\U_VGA|sync|v_counter\(5) & ((\U_VGA|sync|Add0~9\) # (GND)))
+-- \U_VGA|sync|Add0~11\ = CARRY((!\U_VGA|sync|Add0~9\) # (!\U_VGA|sync|v_counter\(5)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0010000000001000",
+	lut_mask => "0011110000111111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_VGA|sync|v_counter\(5),
+	datad => VCC,
+	cin => \U_VGA|sync|Add0~9\,
+	combout => \U_VGA|sync|Add0~10_combout\,
+	cout => \U_VGA|sync|Add0~11\);
+
+-- Location: FF_X35_Y1_N17
+\U_VGA|sync|v_counter[5]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|Add0~10_combout\,
+	ena => \U_VGA|sync|Equal0~2_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|v_counter\(5));
+
+-- Location: LCCOMB_X35_Y1_N18
+\U_VGA|sync|Add0~12\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|sync|Add0~12_combout\ = (\U_VGA|sync|v_counter\(6) & (\U_VGA|sync|Add0~11\ $ (GND))) # (!\U_VGA|sync|v_counter\(6) & (!\U_VGA|sync|Add0~11\ & VCC))
+-- \U_VGA|sync|Add0~13\ = CARRY((\U_VGA|sync|v_counter\(6) & !\U_VGA|sync|Add0~11\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100001100001100",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_VGA|sync|v_counter\(6),
+	datad => VCC,
+	cin => \U_VGA|sync|Add0~11\,
+	combout => \U_VGA|sync|Add0~12_combout\,
+	cout => \U_VGA|sync|Add0~13\);
+
+-- Location: FF_X35_Y1_N19
+\U_VGA|sync|v_counter[6]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|Add0~12_combout\,
+	ena => \U_VGA|sync|Equal0~2_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|v_counter\(6));
+
+-- Location: FF_X35_Y1_N21
+\U_VGA|sync|v_counter[7]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \U_CLK_DIV|temp_clk~clkctrl_outclk\,
+	d => \U_VGA|sync|Add0~14_combout\,
+	ena => \U_VGA|sync|Equal0~2_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \U_VGA|sync|v_counter\(7));
+
+-- Location: LCCOMB_X34_Y1_N4
+\U_VGA|draw~1\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|draw~1_combout\ = (\U_VGA|sync|v_counter\(6)) # ((\U_VGA|sync|v_counter\(5) & \U_VGA|sync|v_counter\(4)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111111000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_VGA|draw~0_combout\,
+	datab => \U_VGA|sync|v_counter\(5),
+	datac => \U_VGA|sync|v_counter\(4),
+	datad => \U_VGA|sync|v_counter\(6),
+	combout => \U_VGA|draw~1_combout\);
+
+-- Location: LCCOMB_X34_Y1_N24
+\U_VGA|draw~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|draw~0_combout\ = (!\U_VGA|sync|h_counter\(7) & (\U_VGA|sync|h_counter\(8) & (!\U_VGA|sync|h_counter\(9) & !\U_VGA|sync|v_counter\(9))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000000000000100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_VGA|sync|h_counter\(7),
+	datab => \U_VGA|sync|h_counter\(8),
+	datac => \U_VGA|sync|h_counter\(9),
+	datad => \U_VGA|sync|v_counter\(9),
+	combout => \U_VGA|draw~0_combout\);
+
+-- Location: LCCOMB_X34_Y1_N0
+\U_VGA|draw~2\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \U_VGA|draw~2_combout\ = (\U_VGA|draw~0_combout\ & ((\U_VGA|sync|v_counter\(7) & (!\U_VGA|sync|v_counter\(8) & \U_VGA|draw~1_combout\)) # (!\U_VGA|sync|v_counter\(7) & (\U_VGA|sync|v_counter\(8) & !\U_VGA|draw~1_combout\))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0010010000000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_VGA|sync|v_counter\(7),
 	datab => \U_VGA|sync|v_counter\(8),
-	datac => \U_VGA|sync|v_counter\(7),
-	datad => \U_VGA|draw~1_combout\,
+	datac => \U_VGA|draw~1_combout\,
+	datad => \U_VGA|draw~0_combout\,
 	combout => \U_VGA|draw~2_combout\);
 
--- Location: LCCOMB_X2_Y18_N20
+-- Location: LCCOMB_X34_Y1_N20
 \U_VGA|red[0]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U_VGA|red[0]~feeder_combout\ = \U_VGA|draw~2_combout\
@@ -2256,7 +2207,7 @@ PORT MAP (
 	datad => \U_VGA|draw~2_combout\,
 	combout => \U_VGA|red[0]~feeder_combout\);
 
--- Location: FF_X2_Y18_N21
+-- Location: FF_X34_Y1_N21
 \U_VGA|red[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2271,7 +2222,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U_VGA|red\(0));
 
--- Location: LCCOMB_X2_Y18_N8
+-- Location: LCCOMB_X34_Y1_N14
 \U_VGA|red[1]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U_VGA|red[1]~feeder_combout\ = \U_VGA|draw~2_combout\
@@ -2285,7 +2236,7 @@ PORT MAP (
 	datad => \U_VGA|draw~2_combout\,
 	combout => \U_VGA|red[1]~feeder_combout\);
 
--- Location: FF_X2_Y18_N9
+-- Location: FF_X34_Y1_N15
 \U_VGA|red[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2300,7 +2251,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U_VGA|red\(1));
 
--- Location: LCCOMB_X2_Y18_N14
+-- Location: LCCOMB_X34_Y1_N30
 \U_VGA|red[2]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U_VGA|red[2]~feeder_combout\ = \U_VGA|draw~2_combout\
@@ -2314,7 +2265,7 @@ PORT MAP (
 	datad => \U_VGA|draw~2_combout\,
 	combout => \U_VGA|red[2]~feeder_combout\);
 
--- Location: FF_X2_Y18_N15
+-- Location: FF_X34_Y1_N31
 \U_VGA|red[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2329,7 +2280,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U_VGA|red\(2));
 
--- Location: LCCOMB_X2_Y18_N18
+-- Location: LCCOMB_X34_Y1_N22
 \U_VGA|green[0]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U_VGA|green[0]~feeder_combout\ = \U_VGA|draw~2_combout\
@@ -2343,7 +2294,7 @@ PORT MAP (
 	datad => \U_VGA|draw~2_combout\,
 	combout => \U_VGA|green[0]~feeder_combout\);
 
--- Location: FF_X2_Y18_N19
+-- Location: FF_X34_Y1_N23
 \U_VGA|green[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2358,7 +2309,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U_VGA|green\(0));
 
--- Location: LCCOMB_X2_Y18_N6
+-- Location: LCCOMB_X34_Y1_N18
 \U_VGA|green[1]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U_VGA|green[1]~feeder_combout\ = \U_VGA|draw~2_combout\
@@ -2372,7 +2323,7 @@ PORT MAP (
 	datad => \U_VGA|draw~2_combout\,
 	combout => \U_VGA|green[1]~feeder_combout\);
 
--- Location: FF_X2_Y18_N7
+-- Location: FF_X34_Y1_N19
 \U_VGA|green[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2387,7 +2338,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U_VGA|green\(1));
 
--- Location: LCCOMB_X2_Y18_N26
+-- Location: LCCOMB_X34_Y1_N12
 \U_VGA|blue[0]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U_VGA|blue[0]~feeder_combout\ = \U_VGA|draw~2_combout\
@@ -2401,7 +2352,7 @@ PORT MAP (
 	datad => \U_VGA|draw~2_combout\,
 	combout => \U_VGA|blue[0]~feeder_combout\);
 
--- Location: FF_X2_Y18_N27
+-- Location: FF_X34_Y1_N13
 \U_VGA|blue[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2416,7 +2367,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U_VGA|blue\(0));
 
--- Location: LCCOMB_X2_Y18_N4
+-- Location: LCCOMB_X34_Y1_N10
 \U_VGA|blue[1]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U_VGA|blue[1]~feeder_combout\ = \U_VGA|draw~2_combout\
@@ -2430,7 +2381,7 @@ PORT MAP (
 	datad => \U_VGA|draw~2_combout\,
 	combout => \U_VGA|blue[1]~feeder_combout\);
 
--- Location: FF_X2_Y18_N5
+-- Location: FF_X34_Y1_N11
 \U_VGA|blue[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2445,7 +2396,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U_VGA|blue\(1));
 
--- Location: FF_X2_Y18_N13
+-- Location: FF_X34_Y1_N1
 \U_VGA|blue[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2460,56 +2411,56 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U_VGA|blue\(3));
 
--- Location: LCCOMB_X2_Y18_N24
+-- Location: LCCOMB_X37_Y1_N4
 \U_VGA|sync|h_sync~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \U_VGA|sync|h_sync~0_combout\ = (!\U_VGA|sync|h_counter\(8) & (\U_VGA|sync|h_counter\(7) & \U_VGA|sync|h_counter\(9)))
+-- \U_VGA|sync|h_sync~0_combout\ = (\U_VGA|sync|h_counter\(7) & (!\U_VGA|sync|h_counter\(8) & \U_VGA|sync|h_counter\(9)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0100000001000000",
+	lut_mask => "0000110000000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_VGA|sync|h_counter\(8),
 	datab => \U_VGA|sync|h_counter\(7),
-	datac => \U_VGA|sync|h_counter\(9),
+	datac => \U_VGA|sync|h_counter\(8),
+	datad => \U_VGA|sync|h_counter\(9),
 	combout => \U_VGA|sync|h_sync~0_combout\);
 
--- Location: LCCOMB_X2_Y14_N22
+-- Location: LCCOMB_X37_Y1_N30
 \U_VGA|sync|h_sync~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \U_VGA|sync|h_sync~1_combout\ = (\U_VGA|sync|h_counter\(3)) # ((\U_VGA|sync|h_counter\(1) & (!\U_VGA|sync|h_counter\(5) & \U_VGA|sync|h_counter\(0))))
+-- \U_VGA|sync|h_sync~1_combout\ = (\U_VGA|sync|h_counter\(3)) # ((!\U_VGA|sync|h_counter\(5) & (\U_VGA|sync|h_counter\(1) & \U_VGA|sync|h_counter\(0))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111111100100000",
+	lut_mask => "1111111101000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_VGA|sync|h_counter\(1),
-	datab => \U_VGA|sync|h_counter\(5),
+	dataa => \U_VGA|sync|h_counter\(5),
+	datab => \U_VGA|sync|h_counter\(1),
 	datac => \U_VGA|sync|h_counter\(0),
 	datad => \U_VGA|sync|h_counter\(3),
 	combout => \U_VGA|sync|h_sync~1_combout\);
 
--- Location: LCCOMB_X2_Y14_N28
+-- Location: LCCOMB_X37_Y1_N8
 \U_VGA|sync|h_sync~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U_VGA|sync|h_sync~2_combout\ = (\U_VGA|sync|h_counter\(4) & ((\U_VGA|sync|h_sync~1_combout\) # (\U_VGA|sync|h_counter\(2))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101010100000",
+	lut_mask => "1100100011001000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_VGA|sync|h_counter\(4),
-	datac => \U_VGA|sync|h_sync~1_combout\,
-	datad => \U_VGA|sync|h_counter\(2),
+	dataa => \U_VGA|sync|h_sync~1_combout\,
+	datab => \U_VGA|sync|h_counter\(4),
+	datac => \U_VGA|sync|h_counter\(2),
 	combout => \U_VGA|sync|h_sync~2_combout\);
 
--- Location: LCCOMB_X2_Y14_N6
+-- Location: LCCOMB_X36_Y1_N0
 \U_VGA|sync|h_sync~3\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U_VGA|sync|h_sync~3_combout\ = ((\U_VGA|sync|h_counter\(6) & (\U_VGA|sync|h_sync~2_combout\ & \U_VGA|sync|h_counter\(5))) # (!\U_VGA|sync|h_counter\(6) & (!\U_VGA|sync|h_sync~2_combout\ & !\U_VGA|sync|h_counter\(5)))) # (!\U_VGA|sync|h_sync~0_combout\)
@@ -2526,7 +2477,7 @@ PORT MAP (
 	datad => \U_VGA|sync|h_counter\(5),
 	combout => \U_VGA|sync|h_sync~3_combout\);
 
--- Location: LCCOMB_X2_Y14_N4
+-- Location: LCCOMB_X34_Y1_N16
 \U_VGA|sync|v_sync~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U_VGA|sync|v_sync~0_combout\ = (((\U_VGA|sync|v_counter\(4)) # (!\U_VGA|sync|v_counter\(5))) # (!\U_VGA|sync|v_counter\(2))) # (!\U_VGA|sync|v_counter\(3))
@@ -2543,41 +2494,41 @@ PORT MAP (
 	datad => \U_VGA|sync|v_counter\(5),
 	combout => \U_VGA|sync|v_sync~0_combout\);
 
--- Location: LCCOMB_X2_Y14_N8
+-- Location: LCCOMB_X34_Y1_N8
 \U_VGA|sync|v_sync~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \U_VGA|sync|v_sync~1_combout\ = ((\U_VGA|sync|v_counter\(1) $ (!\U_VGA|sync|v_counter\(0))) # (!\U_VGA|sync|v_counter\(7))) # (!\U_VGA|sync|v_counter\(6))
+-- \U_VGA|sync|v_sync~1_combout\ = ((\U_VGA|sync|v_counter\(0) $ (!\U_VGA|sync|v_counter\(1))) # (!\U_VGA|sync|v_counter\(7))) # (!\U_VGA|sync|v_counter\(6))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1001111111111111",
+	lut_mask => "1011111101111111",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_VGA|sync|v_counter\(1),
-	datab => \U_VGA|sync|v_counter\(0),
-	datac => \U_VGA|sync|v_counter\(6),
-	datad => \U_VGA|sync|v_counter\(7),
+	dataa => \U_VGA|sync|v_counter\(0),
+	datab => \U_VGA|sync|v_counter\(6),
+	datac => \U_VGA|sync|v_counter\(7),
+	datad => \U_VGA|sync|v_counter\(1),
 	combout => \U_VGA|sync|v_sync~1_combout\);
 
--- Location: LCCOMB_X2_Y18_N30
+-- Location: LCCOMB_X34_Y1_N2
 \U_VGA|sync|v_sync~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \U_VGA|sync|v_sync~2_combout\ = (\U_VGA|sync|v_sync~0_combout\) # (((\U_VGA|sync|v_sync~1_combout\) # (\U_VGA|sync|v_counter\(9))) # (!\U_VGA|sync|v_counter\(8)))
+-- \U_VGA|sync|v_sync~2_combout\ = (\U_VGA|sync|v_sync~0_combout\) # ((\U_VGA|sync|v_counter\(9)) # ((\U_VGA|sync|v_sync~1_combout\) # (!\U_VGA|sync|v_counter\(8))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111111111111011",
+	lut_mask => "1111111011111111",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \U_VGA|sync|v_sync~0_combout\,
-	datab => \U_VGA|sync|v_counter\(8),
+	datab => \U_VGA|sync|v_counter\(9),
 	datac => \U_VGA|sync|v_sync~1_combout\,
-	datad => \U_VGA|sync|v_counter\(9),
+	datad => \U_VGA|sync|v_counter\(8),
 	combout => \U_VGA|sync|v_sync~2_combout\);
 
--- Location: IOIBUF_X29_Y0_N15
+-- Location: IOIBUF_X78_Y43_N1
 \switch[0]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -2589,7 +2540,7 @@ PORT MAP (
 	i => ww_switch(0),
 	o => \switch[0]~input_o\);
 
--- Location: IOIBUF_X36_Y39_N22
+-- Location: IOIBUF_X0_Y13_N15
 \switch[1]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -2601,7 +2552,7 @@ PORT MAP (
 	i => ww_switch(1),
 	o => \switch[1]~input_o\);
 
--- Location: IOIBUF_X49_Y54_N1
+-- Location: IOIBUF_X36_Y39_N22
 \switch[2]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -2625,7 +2576,7 @@ PORT MAP (
 	i => ww_switch(3),
 	o => \switch[3]~input_o\);
 
--- Location: IOIBUF_X62_Y0_N8
+-- Location: IOIBUF_X29_Y0_N29
 \switch[4]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -2637,7 +2588,7 @@ PORT MAP (
 	i => ww_switch(4),
 	o => \switch[4]~input_o\);
 
--- Location: IOIBUF_X69_Y54_N1
+-- Location: IOIBUF_X71_Y54_N29
 \switch[5]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -2649,7 +2600,7 @@ PORT MAP (
 	i => ww_switch(5),
 	o => \switch[5]~input_o\);
 
--- Location: IOIBUF_X0_Y36_N8
+-- Location: IOIBUF_X34_Y39_N29
 \switch[6]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -2661,7 +2612,7 @@ PORT MAP (
 	i => ww_switch(6),
 	o => \switch[6]~input_o\);
 
--- Location: IOIBUF_X14_Y0_N1
+-- Location: IOIBUF_X0_Y10_N1
 \switch[7]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -2673,7 +2624,7 @@ PORT MAP (
 	i => ww_switch(7),
 	o => \switch[7]~input_o\);
 
--- Location: IOIBUF_X24_Y39_N15
+-- Location: IOIBUF_X51_Y0_N29
 \switch[8]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -2685,7 +2636,7 @@ PORT MAP (
 	i => ww_switch(8),
 	o => \switch[8]~input_o\);
 
--- Location: IOIBUF_X58_Y0_N8
+-- Location: IOIBUF_X24_Y39_N15
 \switch[9]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (

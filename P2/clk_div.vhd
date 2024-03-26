@@ -20,7 +20,7 @@ end clk_div;
 
 architecture Behavioral of clk_div is
     -- Setting COUNTER_MAX to generic input_frequency
-    constant COUNTER_MAX : integer := clk_in_freq / clk_out_freq - 1; 
+    constant COUNTER_MAX : integer := clk_in_freq / (2 * clk_out_freq) - 1; 
     signal counter : integer range 0 to COUNTER_MAX := 0;
     signal temp_clk : STD_LOGIC := '0';
 
