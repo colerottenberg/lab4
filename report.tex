@@ -313,7 +313,6 @@ architecture default_arch of vga is
     signal v_count : std_logic_vector(COUNT_RANGE);
     signal h_count : std_logic_vector(COUNT_RANGE);
     -- Clocks
-    signal p_clk : std_logic := '0'; -- Pixel clock
     signal slow_clk : std_logic := '0'; -- Slow clock
     -- Internal Temp signals
     signal temp_h_sync, temp_v_sync, temp_video_on : std_logic;
@@ -323,19 +322,16 @@ architecture default_arch of vga is
 		-- Constants
 		constant speed : integer := 2;
 		constant size : integer := 64;
-		constant X_MAX : integer := 639;
-		constant Y_MAX : integer := 479;
+		constant X_MAX : integer := 638;
+		constant Y_MAX : integer := 478;
 		signal v_on : std_logic := '0';
-
-
-
 
 begin 		
 	-- Slow Clock Divider splits the 50MHz clock into 1Hz
 	clk_div: entity work.clk_div
 		generic map(
 			clk_in_freq => 50e6,
-			clk_out_freq => 1
+			clk_out_freq => 20
 		)
 		port map(
 			clk_in => clk,
@@ -356,22 +352,29 @@ begin
 
    -- The object moves around the screen and will bounce off the edges
    obj_move: process(slow_clk, rst)
+	 	-- Assigning temp variables to movement and position variables
+		variable temp_mov_x: integer;
+		variable temp_mov_y: integer;
     begin
+				temp_mov_x := mov_x;
+				temp_mov_y := mov_y;
         if rising_edge(slow_clk) then
             if rst = '1' then
                 x_pos <= 200;
                 y_pos <= 200;
                 mov_x <= 1;
                 mov_y <= 1;
-            elsif en = '1' then
+            else
                 if x_pos + size >= X_MAX or x_pos <= 0 then
-                    mov_x <= -mov_x;
-                end if;
+                    mov_x <= -1 * mov_x;
+										temp_mov_x := -1 * temp_mov_x;
+								end if;
                 if y_pos + size >= Y_MAX or y_pos <= 0 then
-                    mov_y <= -mov_y;
+                    mov_y <= -1 * mov_y;
+										temp_mov_y := -1 * temp_mov_y;
                 end if;
-                x_pos <= x_pos + mov_x * speed;
-                y_pos <= y_pos + mov_y * speed;
+                x_pos <= x_pos + (temp_mov_x * speed);
+                y_pos <= y_pos + (temp_mov_y * speed);
             end if;
         end if;
     end process obj_move;
@@ -381,9 +384,9 @@ begin
 	begin
 		if rising_edge(clk) then
 			if rst = '0' then
-				if unsigned(h_count) >= to_unsigned(x_pos, h_count'length) and unsigned(h_count) < to_unsigned(x_pos + size, h_count'length) and
-                unsigned(v_count) >= to_unsigned(y_pos, v_count'length) and unsigned(v_count) < to_unsigned(y_pos + size, v_count'length) and
-                temp_video_on = '1' then  
+				if unsigned(h_count) >= to_unsigned(x_pos, h_count'length) and unsigned(h_count) <= to_unsigned(x_pos + size, h_count'length) and
+        unsigned(v_count) >= to_unsigned(y_pos, v_count'length) and unsigned(v_count) <= to_unsigned(y_pos + size, v_count'length) and
+        temp_video_on = '1' then  
 					red <= "0111";
 					green <= "0011";
 					blue <= "1011";
